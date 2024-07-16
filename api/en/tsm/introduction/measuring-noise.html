@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="/" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+
+		<h2>Measuring Noise</h2>
+		<p>
+			Noise is the erratic movement that makes up the pattern
+of any price series. High noise can be compared to a
+drunken sailor's walk while low noise is a straight line
+from the starting to the ending point. Understanding the
+effects of noise can give you a trading edge. A market
+that has high noise is good for mean-reverting and
+arbitrage strategies. One with low noise favors trendfollowing. By selecting markets correctly, you increase
+your chances of success.
+		</p>
+		<p>
+			Noise can be measured as price density, efficiency ratio
+(also called fractal efficiency), and fractal dimension. It
+is important that these measurements do not reflect
+volatility because noise should not be confused with
+volatility. In Figure 1.2 a short, hypothetical period of
+price movement gives an example of noise measured by
+the efficiency ratio (ER). ER is calculated by dividing the
+net move (the change from point A to point B) by the
+sum of the individual moves during that period, each
+taken as positive numbers.
+		</p>
+		<p>
+			<img src="/api/en/tsm/introduction/4.png" alt="" width="100%">
+		</p>
+		<p>
+			FIGURE 1.2 Basic measurement of noise using the
+efficiency ratio (also called fractal efficiency).
+		</p>
+		<p>
+			<img src="/api/en/tsm/introduction/5.png" alt="" width="100%">
+		</p>
+		<p>
+			FIGURE 1.3 Three different price patterns all begin and
+end at the same point. The straight line shows no noise,
+the smaller variations are medium noise, and the larger
+swings are high noise.
+		<br>
+		or
+		<img src="/api/en/tsm/introduction/6.png" alt="" width="30%">
+		<br>
+		where n is the calculation period.
+		</p>
+		<p>
+			Figure 1.3 illustrates the relative level of noise that might
+occur with a price move of the same net change. The
+straight line indicates no noise, the smaller changes that
+move above and below the straight line would be
+medium noise, and the large swings are high noise.
+However, in this example it is not possible to distinguish
+the level of noise from volatility, yet they are not the
+same. In Figure 1.4, the net change in price is from 440
+to 475 in one case and from 440 to 750 in the other, yet
+the sum of the individual component changes is similar,
+595 and 554. The efficiency ratio is 0.06 for the first and
+0.56 for the second, showing that the first is very noisy
+while the second has relatively low noise (see Table 1.1).
+Noise is always relative to the net price change. If prices
+are moving up quickly, then even large swings may not
+be considered “noisy.”
+		</p>
+		<p>
+			<img src="/api/en/tsm/introduction/7.png" alt="" width="100%">
+			<br>
+			FIGURE 1.4 By changing the net price move we can
+distinguish between noise and volatility. If the sum of
+the individual price changes are the same, but the net
+move is larger, then the noise is less.
+		</p>
+		<p>
+			TABLE 1.1 These price changes, reflecting the
+patterns in Figure 1.4, show that larger
+individual price changes do not correspond to
+higher noise if the net change over the entire
+period is much larger.
+		</p>
+		<table>
+				<tr>
+					<th>Day</th>
+					<th>High noise</th>
+					<th>Low noise</th>
+					<th>Diff high</th>
+					<th>Diff low</th>
+				</tr>
+				<tr>
+					<th>1</th>
+					<th>440</th>
+					<th>440</th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th>2</th>
+					<th>510</th>
+					<th>549</th>
+					<th>.70</th>
+					<th>109</th>
+				</tr>
+				<tr>
+					<th>3</th>
+					<th>390</th>
+					<th>627</th>
+					<th>120</th>
+					<th>.78</th>
+				</tr>
+				<tr>
+					<th>4</th>
+					<th>470</th>
+					<th>587</th>
+					<th>.80</th>
+					<th>.40</th>
+				</tr>
+				<tr>
+					<th>5</th>
+					<th>410</th>
+					<th>566</th>
+					<th>.60</th>
+					<th>.21</th>
+				</tr>
+				<tr>
+					<th>6</th>
+					<th>530</th>
+					<th>725</th>
+					<th>120</th>
+					<th>159</th>
+				</tr>
+				<tr>
+					<th>7</th>
+					<th>430</th>
+					<th>664</th>
+					<th>100</th>
+					<th>.61</th>
+				</tr>
+				<tr>
+					<th>8</th>
+					<th>475</th>
+					<th>750</th>
+					<th>.45</th>
+					<th>.86</th>
+				</tr>
+				<tr>
+					<th>Net change</th>
+					<th>.35</th>
+					<th>310</th>
+					<th>595</th>
+					<th>554</th>
+				</tr>
+				<tr>
+					<th>Noise</th>
+					<th></th>
+					<th></th>
+					<th>0.06</th>
+					<th>0.56</th>
+				</tr>
+			
+		</table>
+		<h3>Other Measurements of Noise</h3>
+		<p>
+			The previous example of noise used the efficiency ratio;
+however, price density and fractal dimension may also be
+used. Intuitively, price density can be seen as the extent
+to which prices fill a box. If we take a 10-day period of
+price movement charted with highs and lows, and draw a
+box touching the highest high and lowest low, then the
+density is how much of that box is filled. It is measured
+as:
+			<p>
+				<img src="/api/en/tsm/introduction/8.png" alt="" width="100%">
+			</p>
+			Fractal dimension cannot be measured exactly but can
+be estimated over n days using the following steps:
+			<ol>
+				<li>Max = highest high over n days</li>
+				<li>Min = lowest low over n days</li>
+				<li>Range = max - min</li>
+				<img src="/api/en/tsm/introduction/9.png" alt="" width="100%">
+
+			</ol>
+			There is a strong relationship between fractal dimension
+and the efficiency ratio (fractal efficiency), and there is a
+similarity in the construction of price density and fractal
+dimension. Of the three methods of measuring noise, the
+efficiency ratio seems to be the clearest and that will be
+used in the following analyses.
+<h3>Impact on Trading</h3>
+<p>
+	Without preempting the discussion in Chapter 20
+(“Trends and Price Noise”), a trend system will be more
+profitable when the price series has less noise, and a
+mean reversion strategy will be better when there is
+more noise. That is not to say the noise is the only factor
+that determines the outcome; however, selecting the best
+markets to trade gives you a better chance of success.
+Noise applies equally to all time frames because it
+measures erratic price movement. In that regard, it
+satisfies the concept of fractals, which are repeated in the
+same way at all levels of detail.
+</p>
+On a macro level, noise can help choose which markets
+to trade. On a micro level, it can tell you whether to enter
+a market quickly or wait for a better price.
+		</p>
+
+
+
+		<h2>Next Steps</h2>
+		<p>
+			You're now ready to [link:#api/en/tsm/introduction/globalization Maturing Markets and Globalization].
+		</p>
+
+	</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="/" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+
+		<h2>Moments of the Distribution: Variance, Skewness, and  Kurtosis</h2>
+		<p>
+			The moments of the distribution describe the shape of the data points, which is the way
+they cluster around the mean. There are four moments: mean, variance, skew, and kurtosis, each describing a different aspect of the shape of the distribution. Simply put, the
+mean is the center or average value, the variance is the distance of the individual points
+from the mean, the skew is the way the distribution leans to the left or right relative to
+the mean, and the kurtosis is the peakedness of the clustering. We have already discussed
+the mean, so we will start with the 2nd moment.
+		</p>
+		<p>
+			In the following calculations, we will use the bar notation, P, to indicate the average
+of a list of n prices. The capital P refers to all prices and the small p to individual prices.
+<img src="/api/en/tsm/concepts-calculations/16.png" alt="" width="30%">
+The mean deviation (MD) is a basic method for measuring distribution and may be
+calculated about any measure of central location, such as the arithmetic mean. 
+<img src="/api/en/tsm/concepts-calculations/17.png" alt="" width="30%">
+Then MD is the average of the differences between each price and the arithmetic
+mean of those prices, or some other measure of central location, with all differences
+treated as positive numbers. This formula will be seen often throughout the book.
+<h3>Variance (2nd Moment)</h3>
+<p>
+	Variance (Var), which is very similar to mean deviation, the best estimation of dispersion, will be used as the basis for many other calculations. It is
+	<img src="/api/en/tsm/concepts-calculations/18.png" alt="" width="60%">
+	Notice that the variance is the square of the standard deviation, var = s2 = σ2, one of the
+most commonly used statistics. In Excel, the variance is the function var(list) and in
+TradeStation’s EasyLanguage it is variance(series,n).
+</p>
+The standard deviation (s), most often shown as σ (sigma), is a special form of
+measuring average deviation from the mean, which uses the root-mean-square
+<img src="/api/en/tsm/concepts-calculations/19.png" alt="" width="60%">
+where the differences between the individual prices and the mean are squared to emphasize the signifi cance of extreme values, and then the total value is scaled back using
+the square root function. This popular measure, used throughout this book, is the Excel
+function Stdevp and the TradeStation function StdDev(price,n), for n prices.
+		</p>
+		<p>
+			The standard deviation is the most popular way of measuring the dispersion of data.
+The value of 1 standard deviation about the mean repre sents a clustering of about 68% of
+the data, 2 standard deviations from the mean include 95.5% of all data, and 3 standard
+deviations encompass 99.7%, nearly all the data. While it is not possible to guarantee that
+all data will be included, you can use 3.5 standard deviations to include 100% of the data
+in a normal distribution. These values represent the groupings of a perfectly normal set
+of data, shown in Figure 2.6.
+		</p>
+		<img src="/api/en/tsm/concepts-calculations/20.png" alt="" width="100%">
+		<h3>Skewness (3rd moment)</h3>
+		<p>
+			Most price data, however, are not normally distributed. For physical commodities, such
+as gold, grains, energy, and even interest rates (expressed at yields), prices tend to spend
+more time at low levels and much less time at extreme highs. While gold peaked at $800
+per ounce for one day in January 1980, it remained between $250 and $400 per ounce for
+most of the next 20 years. If we had taken the average at $325 then is would be impossible for the price distribution to be symmetric. If 1 standard deviation is $140, then a
+normal distribution would show a high likelihood of prices dropping to $185, an unlikely
+ scenario. This asymmetry is most obvious in agricultural markets, where a shortage of
+soybeans or coffee in one year will drive prices much higher, but a normal crop the
+following year will return those prices to previous levels.
+		</p>
+		<p>
+			The relationship of price versus time, where markets spend more time at lower
+levels, can be measured as skewness—the amount of distortion from a sym metric distribution, which makes the curve appear to be short on the left and extended to the right
+(higher prices). The extended side is called the tail, and a longer tail to the right is called
+positive skewness. Negative skewness has the tail extending toward the left. This can be
+seen in Figure 2.7.
+		</p>
+		<p>
+			In a perfectly normal distribution, the mean, median, and mode all coincide. As prices
+become positively skewed, typical of a period of higher prices, the mean will show the
+greatest change, the mode will show the least, and the median will fall in between. The
+difference between the mean and the mode, adjusted for dispersion using the standard
+deviation of the distribution, gives a good measure of skewness.
+		</p>
+		<img src="/api/en/tsm/concepts-calculations/21.png" alt="" width="60%">
+		<img src="/api/en/tsm/concepts-calculations/22.png" alt="" width="100%">
+		<p>
+			The distance between the mean and the mode, in a moderately skewed distribution,
+turns out to be three times the difference between the mean and the median; the
+ relationship can also be written as:
+ <img src="/api/en/tsm/concepts-calculations/23.png" alt="" width="60%">
+ To show the similarity between the 2nd and 3rd moments (variance and skewness)
+the more common computational formula is 
+ <img src="/api/en/tsm/concepts-calculations/24.png" alt="" width="60%">
+ where n is the number of prices in the distribution, and σ is the standard deviation of the
+prices. The functions for skew can be found in Excel and TradeStation.
+		</p>
+		<h3>Transformations</h3>
+		<p>
+			The skewness of a data series can sometimes be corrected using a transformation.
+Price data may be skewed in a specifi c pattern. For example, if there are 3 occurrences
+at twice the price, and 1/9 of the occurrences at 3 times the price, the original data
+can be transformed into a normal distribution by taking the square root of each data
+item. The characteristics of price data often show a logarithmic, power, or square-root
+ relationship.
+		</p>
+		<p>
+			To calculate the probability level of a distribution based on the skewed distribution
+of price, we can convert the normal probability to the exponential probability equivalent, PE, using
+<img src="/api/en/tsm/concepts-calculations/25.png" alt="" width="60%">
+While the normal probability, P, understates the probability of occurrence in a price
+distribution, the exponential distribution, PE, will overstate the probability. Whenever
+possible, it is better to use the exact calculation; however, when calculating risk, it might
+be best to err on the side of slightly higher than expected risk.
+<h3>Skewness in Distributions at Different Relative Price Levels</h3>
+<p>
+	Because the lower price levels of most commodities are determined by production
+costs, price distributions show a clear tendency to resist moving below these thresholds. This contributes to the positive skewness in those markets. Considering only the
+short term, when prices are at unusually high levels, they can be volatile and unstable,
+causing a negative skewness that can be interpreted as being top heavy. Somewhere between the very high and very low price levels, we may fi nd a frequency distribution that
+looks normal. Figure 2.8 shows the change in the distribution of prices over, for example,
+20 days as prices move sharply higher. The mean shows the center of the distributions
+as they change from positive to negative skewness. This pattern indicates that a normal distribution is not appropriate for all price analysis, and that a log, exponential, or power
+distribution would only apply best to long-term analysis.
+<img src="/api/en/tsm/concepts-calculations/26.png" alt="" width="100%">
+</p>
+<h3>Kurtosis (4th Moment)</h3>
+<p>
+	One last measurement, kurtosis, is needed to describe the shape of a price distribution. Kurtosis is the peakedness or fl atness of a distribution as shown in Figure 2.9.
+This measurement is good for an unbiased assessment of whether prices are trending or
+moving sideways. If you see prices moving steadily higher, then the distribution will be
+fl atter and cover a wider range. This is call negative kurtosis. If prices are rangebound,
+then the frequency will show clustering around the mean and we have positive kurtosis.
+ Steidlmayer’s Market Profi le, discussed in Chapter 18, uses the concept of kurtosis, with
+the frequency distribution accumulated dynamically using real-time price changes.
+</p>
+Following the same form as the 3rd moment, skewness, kurtosis can be calculated as
+<img src="/api/en/tsm/concepts-calculations/27.png" alt="" width="100%">
+An alternative calculation for kurtosis is
+<img src="/api/en/tsm/concepts-calculations/28.png" alt="" width="80%">
+Most often the excess kurtosis is used, which makes it easier to see abnormal
+distributions. Excess kurtosis, KE = K – 3 because the normal value of the kurtosis is 3.
+		</p>
+		<p>
+			Kurtosis is also useful when reviewing system tests. If you fi nd the kurtosis of the
+daily returns, they should be somewhat better than normal if the system is profi table;
+however, if the kurtosis is above 7 or 8, then it begins to look as though the trading
+method is overfi tted. A high kurtosis means that there are an overwhelming number of
+profi table trades of similar size, which is not likely to happen in real trading. Any high
+value of kurtosis should make you immediately suspicious.
+		</p>
+		<h3>Choosing between Frequency Distribution and Standard Deviation</h3>
+		<p>
+			Frequency distributions are important because the standard deviation doesn’t work for
+skewed distributions, which is most common for most price data. For example, if we
+look back at the histogram for wheat, the average price over the past 25 years was $3.62
+and the standard deviation of those prices was $1.16, then 1 standard deviation to the left
+of the mean is $2.46, a bin which has no data. On the right side, 3.5 standard deviations,
+which should contain 100% of the data, is $7.68, far below the actual high price.
+		</p>
+		<p>
+			Then using the standard deviation can fail on both ends of the distribution for highly
+skewed data, while the frequency distribution gives a very clear and useful picture. If we
+wanted to know the price at the 10% and 90% probability levels based on the frequency
+distribution, we would sort all the data from low to high. If there were 300 monthly data
+points, then the 10% level would be in position 30 and the 90% level in position 271. The
+median price would be at position 151. This is shown in Figure 2.10.
+		</p>
+		<p>
+			When there is a long tail to the right, both the frequency distribution and the standard deviation imply that large moves are to be expected. When the distribution is very
+ symmetric, then we are not as concerned. For those markets that have had extreme
+moves, neither method will tell you the size of the extreme move that could occur. There
+is no doubt that, given enough time, we will see profi ts and losses that are larger than we
+have seen in the past, perhaps much larger.
+		</p>
+		<h3>Autocorrelation</h3>
+		<p>
+			Serial correlation or autocorrelation means that there is persistence in the data; that is,
+future data can be predicted (to some degree) from past data. Such a quality could indicate the existence of trends. A simple way of fi nding autocorrelation is to put the data into column A of a spreadsheet, then copy it to column B while shifting the data down by 1 row.
+Then find the correlation of column A and column B. Additional correlations can be calculated shifting column B down 2, 3, or 4 rows, which might show the existence of a cycle.
+		</p>
+		<img src="/api/en/tsm/concepts-calculations/29.png" alt="" width="100%">
+		<p>
+			A formal way of fi nding autocorrelation is by using the Durbin-Watson test, which
+gives the d-statistic. This approach measures the change in the errors (e), the difference
+between N data points and their average value.
+<img src="/api/en/tsm/concepts-calculations/30.png" alt="" width="60%">
+The value of d always falls between 0 and 4. There is no autocorrelation if d=2. If d is
+substantially less than 2 there is positive autocorrelation; however, if it is below 1, then
+there is more similarity in the errors than is reasonable. The farther d is above 2 the more
+negative autocorrelation appears in the error terms.
+		</p>
+		<p>
+			A positive autocorrelation, or serial correlation, means that a positive error factor
+has a good chance of following another positive error factor.
+		</p>
+		<h3>Probability of Achieving a Return</h3>
+		<code>
+			To be uncertain is to be uncomfortable, but to be certain is to be ridiculous.
+			—Chinese proverb
+		</code>
+		<p>
+			If we see the normal distribution (Figure 2.6) as the annual returns for the stock market
+over the past 50 years, then the mean is about 8%, and one standard deviation is 16%. In
+any one year, we can expect the returns to be 8%; however, there is a 32% chance that it
+will be either greater than 24% (the mean plus one standard deviation) or less than –8%
+(the mean minus one standard deviation). If you would like to know the probability of a
+return of 20% or greater, you must fi rst rescale the values,
+		</p>
+		<img src="/api/en/tsm/concepts-calculations/31.png" alt="" width="100%">
+		<p>
+			Table A1.1, Appendix 1 gives the probability for normal curves. Looking up the
+ standard deviation of 0.75 gives 27.34%, a grouping of 54.68% of the data. That leaves one
+half of the remaining data, or 22.66%, above the target of 20%.
+<h3>Calculating the Probability Automatically</h3>
+<p>
+	It is inconvenient to look up the probability values in a table when you are working with
+a spreadsheet or computer program, yet the probabilities are easier to understand than
+standard deviation values. You can calculate the area under the curve that corresponds to
+a particular z value (the standard deviation), using the following approximation.1
+</p>
+<img src="/api/en/tsm/concepts-calculations/32.png" alt="" width="100%">
+<img src="/api/en/tsm/concepts-calculations/33.png" alt="" width="100%">
+Then there is a 22.7% probability that a value will exceed 0.75 standard deviations
+(that is, fall on one end of the distribution outside the value of 0.75). The chance of a
+value falling inside the band formed by ±0.75 standard deviations is 1 – (2 × 0.2266) =
+0.5468, or 54.68%. That is the same value found in Table A1.1, Appendix 1.
+		</p>
+		<p>
+			For those using Excel, the answer can be found with the function normdist(p,mean,
+stdev,cumulative), where
+p is the current price or value
+mean is the mean of the series of p’s
+stdev is the standard deviation of the series of p’s, and
+cumulative is “true” if you want the z value.
+Then the result of normdist(35,20,5,true) is 0.99865, or a 99.8% probability, and if
+cumulative is “false” then the result is 0.000866.
+		</p>
+		<h3>Standard Error</h3>
+		<p>
+			Throughout the development and testing of a trading system, we want to know if the
+results we are seeing are as expected. The answer will always depend on the size of the
+data sample and the amount of variance that is typical of the data during this period.
+		</p>
+		<p>
+			One descriptive measure of error, called the standard error (SE), uses the variance,
+which gives the estimation of error based on the distribution of the data using multiple
+data samples. It is a test that determines how the sample means differ from the actual
+mean of all the data. It addresses the uniformity of the data.
+<img src="/api/en/tsm/concepts-calculations/34.png" alt="" width="100%">
+Sample means refers to the data being sampled a number of times, each with n data
+points, and the means of these samples are used to fi nd the variance. In most cases,
+we would use a single data series and calculate the variance as shown earlier in this
+chapter.
+<h3>t-Statistic and Degrees of Freedom</h3>
+<p>
+	When fewer prices or trades are used in a distribution, we can expect the shape of the
+curve to be more variable. For example, it may be spread out so that the peak of the distribution will be lower and the tails will be higher. A way of measuring how close the
+sample distribution of a smaller set is to the normal distribution (of a large sample of
+data) is to use the t-statistic (also called the student’s t-test, developed by W. S. Gossett).
+The t-test is calculated according to its degrees of freedom (df), which is n – 1, where n
+is the sample size, the number of prices used in the distribution.
+<img src="/api/en/tsm/concepts-calculations/35.png" alt="" width="100%">
+
+The more data in the sample, the more reliable the results. We can get a broad view
+of the shape of the distribution by looking at a few values of t in Table 2.2, which gives
+the values of t corresponding to the upper tail areas of 0.10, 0.05, 0.025, 0.01, and 0.005.
+The table shows that as the sample size n increases, the values of t approach those of the
+standard normal values of the tail areas.
+
+</p>
+The values oft that are needed to be signifi cant can be found in Appendix 1, Table A1.2,
+“t-Distribution.” The column headed “0.10” gives the 90% confi dence level, “0.05” is 95%,
+and “0.005” is 99.5%. For example, if we had 20 prices in our sample, and wanted the probability of the upper tail to be 0.025, then the value of t would need to be 2.086. For smaller
+samples, the value of t would be larger in order to have the same confidence.
+
+		</p>
+		<p>
+			When testing a trading system, degrees of freedom can be the number of trades produced by the strategy. When you have few trades, the results may not represent what
+you will get using a longer trading history. When testing a strategy, you will fi nd a similar
+relationship between the number of trades and the number of parameters, or variables,
+used in the strategy. The more variables used, the more trades are needed to create expectations with an acceptable confidence level.
+		</p>
+		<h3>2-Sample t-Test</h3>
+		<p>
+			<img src="/api/en/tsm/concepts-calculations/36.png" alt="" width="100%">
+
+			You may want to compare two periods of data to decide whether the price patterns have
+changed signifi cantly. Some analysts use this to eliminate inconsistent data, but the characteristics of price and economic data change as part of the evolving process, and systematic trading should be able to adapt to these changes. This test is best applied to
+trading results in order to decide if a strategy is performing consistently. This is done
+with a 2-sample t-test:
+		</p>
+		<img src="/api/en/tsm/concepts-calculations/37.png" alt="" width="100%">
+		<p>
+			and the two periods being compared are mutually exclusive. The degrees of freedom, df,
+needed to fi nd the confi dence levels in Table A1.2 can be calculated using Satterthwaite’s
+approximation, where s is the standard deviation of the data values:
+<img src="/api/en/tsm/concepts-calculations/38.png" alt="" width="100%">
+When using the t-test to fi nd the consistency of profi ts and losses generated by a trading system, replace the data items by the net returns of each trade, the number of data
+items by the number of trades, and calculate all other values using returns rather than
+prices.
+		</p>
+		
+
+
+		
+
+		<h2>Next Steps</h2>
+		<p>
+			You're now ready to [link:#api/en/tsm/concepts-calculations/risk-return Standardizing Risk and Return].
+		</p>
+
+	</body>
+</html>

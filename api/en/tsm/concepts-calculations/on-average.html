@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="/" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+
+		<h2>On Average</h2>
+		<p>
+			In working with numbers, it is often necessary to use representative values. The range of
+values or the average may be substituted to change a single price into a general characteristic in order to solve a problem. The average (arithmetic mean) of many values can
+be a preferable substitute for any one value. For example, the average retail price of one
+pound of coffee in the Northeast is more meaningful to a cost-of-living calculation than
+the price at any one store. However, not all data can be combined or averaged and still
+have meaning. The average of all prices taken on the same day would not say anything
+about an individual market that was part of the average. Averaging the prices of unrelated
+items, such as a box of breakfast cereal, the hourly cost of automobile repair, and the
+price of the German DAX index would produce a number of questionable value. The average of a group of numbers must have some useful meaning.
+		</p>
+		<p>
+			The average can be misleading in other ways. Consider coffee, which rose from $0.40
+to $2.00 per pound in one year. The average price of this product may appear to be $1.20;
+however, this would not account for the time that coffee was sold at various price levels.
+Table 2.1 divides the coffee price into four equal intervals, then shows that the time spent
+at these levels was uniformly opposite to the price rise. That is, prices remained at lower
+levels longer and at higher levels for shorter time periods, which is very normal price
+behavior
+		</p>
+		<p>
+			When the time spent at each price level is included, it can be seen that the average
+price should be lower than $1.20. One way to calculate this, knowing the specifi c number
+of days in each interval, is by using a weighted average of the price
+	<img src="/api/en/tsm/concepts-calculations/3.png" alt="" width="70%">
+	<img src="/api/en/tsm/concepts-calculations/4.png" alt="" width="100%">
+	This result can vary based on the number of time intervals used; however, it gives a better idea of the correct average price. There are two other averages for which time is an important element—the geometric mean and the harmonic mean.
+	<h3>Geometric Mean</h3>
+	<p>
+		The geometric mean represents a growth function in which a price change from 50 to 100
+is as important as a change from 100 to 200. If there are n prices, a1, a2, a3, . . . , an, then
+the geometric mean is the nth root of the product of the prices
+<img src="/api/en/tsm/concepts-calculations/5.png" alt="" width="100%">
+The two solutions are equivalent. The term ln is the natural log, or log base e. (Note that
+there is some software where the function log actually is ln.) Using the price levels in
+Table 2.1,
+<img src="/api/en/tsm/concepts-calculations/6.png" alt="" width="100%">
+While the arithmetic mean, which is time-weighted, gave the value of 105.71, the geometric
+mean shows the average as 104.19.
+	</p>
+	The geometric mean has advantages in application to economics and prices. A classic example compares a tenfold rise in price from 100 to 1000 to a fall to one tenth from 100 to 10. An arithmetic mean of the two values 10 and 1000 is 505, while the geometric
+	mean gives
+	<img src="/api/en/tsm/concepts-calculations/7.png" alt="" width="80%">
+	and shows the relative distribution of prices as a function of comparable growth. Due to
+this property, the geometric mean is the best choice when averaging ratios that can be
+either fractions or percentages.
+	<h3>Quadratic Mean</h3>
+	<p>
+		The quadratic mean is most often used for estimation of error. It is calculated as:
+		<img src="/api/en/tsm/concepts-calculations/8.png" alt="" width="60%">
+
+		The quadratic mean is the square root of the mean of the square of the items (rootmean-square). It is most well known as the basis for the standard deviation. This will
+be discussed later in this chapter in the section “Moments of the Distribution: Variance,
+Skewness, and Kurtosis.”
+	</p>
+	<h3>Harmonic Mean</h3>
+	<p>
+		The harmonic mean is another time-weighted average, but not biased toward higher
+or lower values as in the geometric mean. A simple example is to consider the average
+speed of a car that travels 4 miles at 20 mph, then 4 miles at 30 mph. An arithmetic mean
+would give 25 mph, without considering that 12 minutes were spent at 20 mph and 8 minutes at 30 mph. The weighted average would give
+<img src="/api/en/tsm/concepts-calculations/9.png" alt="" width="100%">
+This allows the solution pattern to be seen. For the 20 and 30 mph rates of speed, the
+solution is
+<img src="/api/en/tsm/concepts-calculations/10.png" alt="" width="100%">
+
+
+which is the same answer as the weighted average. Considering the original set of numbers again, the basic form of harmonic mean can be applied:
+<img src="/api/en/tsm/concepts-calculations/11.png" alt="" width="100%">
+We might apply the harmonic mean to price swings, where the fi rst swing moved 20 points
+over 12 days and the second swing moved 30 points over 8 days.
+
+	</p>
+		</p>
+
+
+		<h2>Next Steps</h2>
+		<p>
+			You're now ready to [link:#api/en/tsm/concepts-calculations/price-distribution Price Distribution].
+		</p>
+
+	</body>
+</html>

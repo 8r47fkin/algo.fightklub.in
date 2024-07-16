@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="/" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+
+		<h2>About Data and Averaging</h2>
+		<h3>The Law of Averages</h3>
+		<p>
+			We begin at the beginning, with the law of averages, a greatly misunderstood and misquoted principle. In trading, the law of averages is most often referred to when an abnormally long series of losses is expected to be offset by an equal and opposite run of
+profi ts. It is equally wrong to expect a market that is currently overvalued or overbought
+to next become undervalued or oversold. That is not what is meant by the law of averages. Over a large sample, the bulk of events will be scattered close to the average in
+such a way that the typical values overwhelm the abnormal events and cause them to be
+insignifi cant
+		</p>
+		<p>
+			This principle is illustrated in Figure 2.1, where the number of average items is extremely large, and the addition of a small abnormal grouping to one side of an average
+			group of near-normal data does not affect the balance. It is the same as being the only
+			passenger on a jumbo jet. Your weight is insignifi cant to the operation of the airplane
+			and not noticed when you move about the cabin. A long run of profi ts, losses, or an
+			unusually sustained price movement is simply a rare, abnormal event that will be offset
+			over time by the overwhelming large number of normal events. Further discussion of
+			this and how it affects trading can be found in “Gambling Techniques—The Theory of
+			Runs,” Chapter 22.
+			<img src="/api/en/tsm/concepts-calculations/1.png" alt="" width="100%">
+		<h3>In-Sample and Out-of-Sample Data</h3>
+		<p>
+			Proper test procedures call for separating data into in-sample and out-of-sample sets.
+			This will be discussed in Chapter 21, System Testing. For now, consider the most important points. All testing is overfi tting the data, yet there is no way to fi nd out if an idea or
+			system works without testing it. By setting aside data that you have not seen to use for
+			validation, you have a better chance that your idea will work before putting money on it.
+		</p>
+		<p>
+			There are many ways to select in-sample data. For example, if you have 20 years
+			of price history, you might choose to use the fi rst 10 years for testing and reserve the
+			second 10 years for validation. But then markets change over time; they become more
+			volatile and may be more or less trending. It might be best to use alternating periods of
+			in-sample and out-of-sample data, in 2-year intervals, provided that you never look at the
+			data during the out-of-sample periods. Alternating these periods may create a problem
+			for continuous, long-term trends, but that will be resolved in Chapter 21.
+		</p>
+		<p>
+			The most important factor when reserving out-of-sample data is that you get only
+			one chance to use it. Once you have done your best to create the rules for a trading program, you then run that program through the unseen data. If the results are successful
+			then you can trade the system, but if it fails, then you are also done. You cannot look at
+			the reasons why it failed and change the trading method to perform better. You would
+			have introduced feedback, and your out-of-sample data is considered contaminated. The
+			second try will always be better, but it is now overfitted.
+		</p>
+		<h3>How Much Data Is Enough?</h3>
+		<p>
+			Statisticians will say, “More is better.” The more data you test, the more reliable your results. Technical analysis is fortunate to be based on a perfect set of data. Each price that is recorded by the exchange, whether it’s IBM at the close of trading in New York on May 5,
+			or the price of Eurodollar interest rates at 10:05 in Chicago, is a confi rmed, precise value.
+		</p>
+		<p>
+			Remember that, when you use in-sample and out-of-sample data for development,
+			you need more data. You will only get half the combinations and patterns when 50% of
+			the data has been withheld.
+		</p>
+		<h3>Economic Data</h3>
+		<p>
+			Most other statistical data are not as timely, not as precise, and not as reliable as the price
+			and volume of stocks, futures, ETFs, and other exchange-traded products. Economic
+			data, such as the Producer Price Index or Housing Starts, are released as monthly averages, and can be seasonally adjusted. A monthly average represents a broad range of
+			numbers. In the case of the PPI, some producers may have paid less than the average of
+			the prior month and some more, but the average was +0.02. The lack of a range of values,
+			or a standard deviation of the component values, reduces the usefulness of the information. This statistical data is often revised in the following month; sometimes those revisions can be quite large. When working with the Department of Energy (DOE) weekly
+			data releases, you will need to know the history of the exact numbers released as well as
+			the revisions, if you are going to design a trading method that reacts to those reports. You
+			may find that it is much easier to fi nd the revised data, which is not what you really need.
+		</p>
+		<p>
+			If you use economic data, you must be aware of when that data is released. The
+			United States is very precise and prompt but other countries can be months or years late
+			in releasing data. If the input to your program is monthly data and comes from the CRB
+			Yearbook, be sure that you check when that data was actually available. 
+		</p>
+		<h3>Sample Error</h3>
+		<p>
+			When an average is used, it is necessary to have enough data to make that average accurate. Because much statistical data is gathered by sampling, particular care is given to
+			accumulating a suffi cient amount of representative data. This holds true with prices as
+			well. Averaging a few prices, or analyzing small market moves, will show more erratic
+			results. It is diffi cult to draw an accurate picture from a very small sample.
+		</p>
+		<p>
+			When using small, incomplete, or representative sets of data, the approximate error,
+			or accuracy, of the sample can be found using the standard deviation. A large standard
+			deviation indicates an extremely scattered set of points, which in turn makes the average
+			less representative of the data. This process is called the testing of signifi cance. Accuracy increases as the number of items becomes larger, and the measurement of sample
+			error becomes proportionately smaller
+		</p>
+			<img src="/api/en/tsm/concepts-calculations/2.png" alt="" width="100%">
+		</p>
+		<p>
+			Therefore, using only one item has a sample error of 100%; with four items, the error is 50%. The size of the error is important to the reliability of any trading system. If a
+system has had only four trades, whether profi ts or losses, it is very diffi cult to draw any reliable conclusions about future performance. There must be suffi cient trades to assure
+a comfortably small error factor. To reduce the error to 5%, there must be 400 trades. This
+presents a dilemma for a very slow trend-following method that may only generate two or
+three trades each year. To compensate for this, the identical method can be applied across
+many markets and the number of trades used collectively (more about this in Chapter 21).
+		</p>
+		<h3>Representative Data</h3>
+		<p>
+			The amount of data is a good estimate of its usefulness; however, the data should represent at least one bull market, one bear market, and some sideways periods. More than
+one of each is even better. If you were to use 10 years of daily S&P Index values from 1990
+to 2000, or 25 years of 10-year Treasury notes through 2010, you would only see a bull
+market. A trading strategy would be profi table whenever it was a buyer, if you held the
+position long enough. Unless you included a variety of other price patterns, you would
+not be able to create a strategy that would survive a downturn in the market. Your results
+would be unrealistic.
+		</p>
+		<h3>Data That Is No Longer Useful</h3>
+		<p>
+			There are clear cases when a stock or futures market has undergone a structural change
+and the current data is different from historic data. The evolution of General Electric from a manufacturer of light bulbs to a massive fi nancial institution represents a
+ structural change. Its transformation back to a manufacturing company, announced in
+2010, may be another structural change. A company that began in the United States,
+such as McDonald’s, but expanded to have large international exposure, also shows a
+structural change in its price patterns. In foreign exchange, we have seen the individual
+European currencies fi rst tied together by agreement, then fi nally merged into a single
+unit, the euro.
+		</p>
+		<p>
+			Is it important to include historic data in your testing when that data represents a
+different company profi le or a different geopolitical situation? Ideally, your strategy is
+robust if it can adapt to these changing profiles and show consistently profi table returns
+over a long test period. The statisticians have that point in their favor—longer really is
+better. These companies and markets will continue to evolve, and your program will need
+to continue to adapt.
+		</p>
+		<p>
+			As a very fast trader, you may think about limiting your testing to much shorter
+periods. If you trade once each day, then in 5 years you would generate 1,250 trades; in
+10 years, 2,500 trades. If your trading strategy is profi table over 2,500 trades, then you’ve
+satisfi ed the issue of the sampling error. However, you may not have included data that
+is representative of different types of markets and a variety of price patterns. Even with
+a large number of trades, tests spanning many years will be needed to show robustness.
+		</p>
+		<h3>Safety First</h3>
+		<p>
+			It is important to remember that the accuracy of your testing depends on both the amount
+of data used and the number of trades generated by the system. If your estimates of loss
+are not reliable, you put your investment at risk.
+		</p>
+
+
+		<h2>Next Steps</h2>
+		<p>
+			You're now ready to [link:#api/en/tsm/concepts-calculations/on-average On Average].
+		</p>
+
+	</body>
+</html>

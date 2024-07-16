@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<base href="/" />
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+
+		<h2>Price Distribution</h2>
+		<p>
+			The measurement of distribution is very important because it tells you generally what to
+expect. We cannot know what tomorrow’s S&P trading range will be, but if the current
+price is 1200, then we have a high level of confi dence that it will fall between 900 and
+1500 this year, but less confi dence that it will fall between 1100 and 1300. We have much
+less confi dence that it will fall between 1150 and 1250, and we have virtually no chance
+of picking the exact range. The following measurements of distribution allow you to put
+a probability, or confi dence level, on the chance of an event occurring.
+		</p>
+		<p>
+			In all of the statistics that follow, we will use a limited number of prices or—in some
+cases—individual trading profi ts and losses as the sample data. We want to measure the
+characteristics of our sample, fi nding the shape of the distribution, deciding how results
+of a smaller sample compare to a larger one, or how similar two samples are to each
+other. All of these measures will show that the smaller samples are less reliable, yet they
+can be still be used if you understand the size of the error or the difference in the shape
+of the distribution compared to the expected distribution of a larger sample.
+		</p>
+		<h3>Frequency Distributions</h3>
+		<p>
+			The frequency distribution (also called a histogram) is simple yet can give a good picture of the characteristics of the data. Theoretically, we expect commodity prices to
+spend more time at low price levels and only brief periods at high prices. That pattern is
+shown in Figure 2.2 for wheat during the past 25 years. The most frequent occurrences
+are at the price where the supply and demand are balanced, called equilibrium. When there is a shortage of supply, or an unexpected demand, prices rise for a short time until
+either the demand is satisfi ed (which could happen if prices are too high), or supply increases to meet demand. There is usually a small tail to the left where prices occasionally
+trade for less than the cost of production, or at a discounted rate during periods of high
+supply.
+<img src="/api/en/tsm/concepts-calculations/12.png" alt="" width="100%">
+To calculate a frequency distribution with 20 bins, we fi nd the highest and lowest
+prices to be charted, and divide the difference by 19 to get the size of one bin. Beginning
+with the lowest price, add the bin size to get the second value, add the bin size to the
+second value to get the third value, and so on. When completed, you will have 20 bins that
+begin at the lowest price and end at the highest price. You then can count the number of
+prices that fall into each bin, a nearly impossible task, or you can use a spreadsheet to do
+it. In Excel, you go to Data/Data Analysis/Histogram and enter the range of bins (which
+you need to set up in advance) and the data to be analyzed, then select a blank place
+on the spreadsheet for the output results (to the right of the bins is good) and click OK.
+The frequency distribution will be shown instantly. You can then plot the results seen in
+Figure 2.3.
+		</p>
+		<p>
+			The frequency distribution shows that the most common price fell between $3.50 and
+$4.00 per bushel but the most active range was from $2.50 to $5.00. The tail to the right
+extends to just under $10/bushel and clearly demonstrates the fat tail in the price distribution. If this was a normal distribution, there would be no entries past $6. The absence
+of price data below $2.50 is due to the cost of production. Below that price farmers would
+refuse to sell at a loss; however, the U.S. government has a price support program that
+guarantees a minimum return for farmers.
+		</p>
+		<p>
+			The wheat frequency distribution can also be viewed net of infl ation or changes in
+the U.S. dollar. This will be seen at the end of this chapter.
+<img src="/api/en/tsm/concepts-calculations/12.png" alt="" width="100%">
+<h3>Short-Term Distributions</h3>
+The same frequency distributions occur even when we look at shorter time intervals,
+although the pattern is more erratic as the time interval gets very small. If we take wheat
+prices for the calendar year 2007 (Figure 2.4) we see a steady move up during midyear,
+followed by a wide-ranging sideways pattern at higher level; however, the frequency distribution in Figure 2.5 shows a pattern similar to the long-term distribution, with the most
+common value at a low level and a fat tail to the right. If we had picked the few months
+just before prices peaked in September 2007, the chart might have shown the peak price
+further to the right and the fat tail on the left. For commodities, this represents a period
+of price instability, and expectations that prices will fall.
+		</p>
+		<p>
+			It should be expected that the distribution of prices for a physical commodity, such
+as agricultural products, metals, and energy will be skewed toward the left (more occurrences at lower prices) and have a long tail at higher prices toward the right of the
+chart. This is because prices remain at relatively higher levels for only short periods of
+time while there is an imbalance in supply and demand. In the stock market, history has
+shown that stocks will not sustain exceptionally high price/earnings (P/E) ratios indefinitely; 
+however, the period of adjustment can be drawn out over many years, unlike an agricultural product that begins again each year. When observing shorter price periods,
+patterns that do not fi t the standard distribution may be considered in transition. Readers who would like to pursue this topic should read Chapter 18, especially the sections
+“Distribution of Prices” and “Steidlmayer’s Market Profile.”
+
+<img src="/api/en/tsm/concepts-calculations/13.png" alt="" width="100%">
+<img src="/api/en/tsm/concepts-calculations/14.png" alt="" width="100%">
+
+		</p>
+		<p>
+			The measures of central tendency discussed in the previous section are used to describe the shape and extremes of price movement shown in the frequency distribution.
+The general relationship between the three principal means when the distribution is not
+perfectly symmetric is
+		</p>
+		<p>
+			Arithmetic mean > Geometric mean > Harmonic mean
+		</p>
+		<h3>Median and Mode</h3>
+		<p>
+			Two other measurements, the median and the mode, are often used to defi ne distribution.
+The median, or “middle item,” is helpful for establishing the “center” of the data; when
+the data is sorted, it is the value in the middle. The median has the advantage of discounting extreme values, which might distort the arithmetic mean. Its disadvantage is that you
+must sort all of the data in order to locate the middle point. The median is preferred over
+the mean except when using a very small number of items.
+		</p>
+		<p>
+			The mode is the most commonly occurring value. In Figure 2.5, the mode is the highest bar in the frequency distribution, at bin 800.
+		</p>
+		<p>
+			In a normally distributed price series, the mode, mean, and median all occur at the
+same value; however, as the data becomes skewed, these values will move farther apart.
+The general relationship is:
+		</p>
+		<p>
+			Mean > Median > Mode
+		</p>
+		<p>
+			A normal distribution is commonly called a bell curve, and values fall equally on
+both sides of the mean. For much of the work done with price and performance data, the distributions tend to be skewed to the right (toward higher prices or higher trading
+profi ts), and appear to fl atten or cut off on the left (lower prices or trading losses). If you
+were to chart a distribution of trading profi ts and losses based on a trend system with
+a fi xed stop-loss, you would get profi ts that could range from zero to very large values,
+while the losses would be theoretically limited to the size of the stop-loss. Skewed distributions will be important when we measure probabilities later in this chapter. There are
+no “normal” distributions in a trading environment.
+		</p>
+		<h3>Characteristics of the Principal Averages</h3>
+		<p>
+			Each averaging method has its unique meaning and usefulness. The following summary
+points out their principal characteristics:
+		</p>
+		<p>
+			The arithmetic mean is affected by each data element equally, but it has a tendency
+to emphasize extreme values more than other methods. It is easily calculated and is subject to algebraic manipulation.
+		</p>
+		<p>
+			The geometric mean gives less weight to extreme variations than the arithmetic
+mean and is most important when using data representing ratios or rates of change. It
+cannot be used for negative numbers but is also subject to algebraic manipulation.
+		</p>
+		<p>
+			The harmonic mean is most applicable to time changes and, along with the geometric mean, has been used in economics for price analysis. It is more diffi cult to calculate;
+therefore, it is less popular than either of the other averages, although it is also capable
+of algebraic manipulation.
+		</p>
+		<p>
+			The mode is the most common value and is only determined by the frequency distribution. It is the location of greatest concentration and indicates a typical value for a
+reasonably large sample. With an unsorted set of data, such as prices, the mode is timeconsuming to locate and is not capable of algebraic manipulation.
+		</p>
+		<p>
+			The median is the middle value, and is most useful when the center of an incomplete
+set is needed. It is not affected by extreme variations and is simple to fi nd; however, it
+requires sorting the data, which causes the calculation to be slow. Although it has some
+arithmetic properties, it is not readily adaptable to computational methods.
+		</p>
+
+		<h2>Next Steps</h2>
+		<p>
+			You're now ready to [link:#api/en/tsm/concepts-calculations/moments-variance-skewness-kurtosis Moments of the Distribution Variance Skewness and  Kurtosis].
+		</p>
+
+	</body>
+</html>
