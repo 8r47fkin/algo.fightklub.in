@@ -10,7 +10,150 @@
 
 		<h2>The Index</h2>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam odit aspernatur enim, perferendis sequi fugiat iusto, rerum voluptatum veritatis est aliquid deserunt? Eaque dolorum explicabo debitis dicta suscipit tempora enim.
+			The purpose of an average is to transform individuality into classifi cation. In doing that,
+the data is often smoothed, and useful information is gained. Indexes have attracted
+enormous popularity in recent years. Where there was only the Value Line and S&P 500
+trading as futures markets in the early 1980s, now there are stock index futures contracts representing the markets of every industrialized country. The creation of trusts,
+such as SPDRs (called “Spyders,” the S&P 500), Diamonds (DIA, the Dow Jones Industrials), and Qs (QQQ, the NASDAQ 100) have given stock traders a familiar vehicle to
+invest in the broad market rather than pick individual shares. Industrial sectors, such
+as pharmaceuticals, health care, and technology, fi rst appeared as mutual funds, then
+as ETFs, and now can also be traded as futures. These index markets all have the additional advantage of not being constrained by having to borrow shares in order to sell
+short, or by the uptick rule (if it is reinstated) requiring all short sales to be initiated on
+an uptick in price.
+		</p>
+		<p>
+			Index markets allow both individual and institutional participants a number of specialized investment strategies. They can buy or sell the broad market, they can switch
+from one sector to another (sector rotation), or they can sell an overpriced sector while
+buying the broad market index (statistical arbitrage). Institutions fi nd it very desirable,
+from the view of both costs and taxes, to temporarily hedge their cash stock portfolio
+by selling S&P 500 futures rather than liquidating stock positions. They may also hedge
+using options on the S&P futures or SPYs. An index simplifi es the decision-making
+process for trading. If an index does not exist, one can be constructed to satisfy most
+purposes.
+		</p>
+		<p>
+			The index holds an important role as a benchmark for performance. Most investors
+believe that a trading program is only attractive if it has a better return-to-risk ratio than
+a portfolio of 60% stocks (as represented by the S&P 500 index), and 40% bonds (the Lehman Brothers Treasury Index). Beating the index is called creating alpha, proving that
+you’re smarter than the market.
+		</p>
+		<h3>Constructing an Index</h3>
+		<p>
+			An index is standardized way of expressing price movement, normally an accumulation
+of percentage changes. Most indexes have a starting value of 100 on a specifi c date. The
+selection of the base year is often “convenient” but can be chosen as a period of price
+stability. The base year for U.S. productivity and for unemployment is 1982; for consumer
+confi dence, 1985; and for the composite of leading indicators, 1987. The CRB Yearbook
+shows the Producer Price Index (PPI) from as far back as 1913. For example, the PPI,
+which is released monthly, had a value of 186.8 in October 2010 and 185.1 in September
+2010, a 0.9184% increase in one month. An index value less than 100 means that the index
+has less value than when it started.
+		</p>
+		<p>
+			Each index value is calculated from the previous value as:
+<img src="/api/en/tsm/concepts-calculations/49.png" alt="" width="100%">
+and the 1-period returns are calculated in the same way as shown previously in this
+ chapter
+		</p>
+		<h3>Calculating the Net Asset Value—Indexing Returns</h3>
+		<p>
+			The last calculations shown in the spreadsheet, Table 2.3, are the net asset value (NAV),
+calculated two ways. This is essentially the returns converted to an index, showing
+the compounded rate of return based on daily profi t and losses relative to a starting
+ investment. In the spreadsheet, this is shown in column F using standard returns and G
+using ln returns.
+		</p>
+		<p>
+			The process of calculating NAVs can be done with the following steps:
+			<ol>
+				<li>Establish the initial investment, in this case $100,000, shown at the top of column C.
+					This can be adjusted later based on the target volatility.</li>
+					<li>Calculate the cumulative account value by adding the daily profi ts or losses
+						( column B) to the previous account value (column C).</li>
+						<li>Calculate the daily returns by either (a) dividing today’s profi t or loss by yesterday’s
+							account value to get r, or (b) taking the natural log of 1 + r</li>
+							<li>If using method (a) then each subsequent NAVt = NAVt−1 × (1 + r), and if using method
+								(b) then each NAVt = NAVt−1 + ln(1 + r).</li>
+			</ol>
+			The final values of the NAV are in the last dated rows. The U.S. government requires
+that NAVs be calculated this way, although it doesn’t specify whether returns should
+be based on the natural log. This process is also identical to indexing, which turns any
+price series into one that refl ects percentage returns.
+		</p>
+		<h3>Leveraged Long or Short Index Funds</h3>
+		<p>
+			As index markets have become more popular, fi nancial engineering has created a wide
+range of innovative trading vehicles. Mutual funds, such as Rydex and ProFunds, cater
+to market timers, a group of money managers that may trade in and out of the funds
+each day. These funds track the major index markets closely, but offer unique variations.
+There are both long and short funds, and each may be leveraged. When you buy a long
+fund that tracks the S&P 500 (called Nova by Rydex), you are simply long the equivalent
+of the S&P 500. However, when you buy a short S&P fund, called Ursa, you profi t when
+the S&P index price drops. In addition, both Rydex and ProFunds offer leverage of 1.5 or
+2.0 on these funds, so that a gain of 1.0% in the S&P 500 translates into a gain of 2.0% in
+ProFunds’ UltraBull S&P fund; a drop of 1.0% in the S&P would generate a profi t of 2.0%
+in ProFunds’ UltraBear fund. The motivation behind the short funds, or inverse funds,
+is to circumvent the U.S. government rule that does not permit short sales in retirement
+accounts.
+		</p>
+		<p>
+			The calculation for leveraged long funds is very similar to a simple index; however,
+a short fund (where you profi t from a decline in prices) is compounded to the upside, in
+the same way as a long fund. The following calculation will create a long and short index
+that closely approximates those used by Rydex and ProFunds. In addition, it includes the
+calculation of the daily high and low index values. If you intend to create a leveraged S&P
+index, start with the cash S&P price. Use the cash index equivalent for each of the mutual
+fund indexes that you plan to duplicate.
+		</p>
+		<p>
+			In the following calculations, leverage is the leverage factor of the fund. Initial index
+values for both long and short funds are
+<img src="/api/en/tsm/concepts-calculations/50.png" alt="" width="100%">
+Each subsequent index value for long funds is
+<img src="/api/en/tsm/concepts-calculations/51.png" alt="" width="100%">
+For each subsequent value for the short funds invert the middle term:
+<img src="/api/en/tsm/concepts-calculations/52.png" alt="" width="100%">
+where XC, XH, and XL = the leveraged index closing, high, and low prices <br>
+C, H, and L = the underlying close, high, and low prices or index values.
+
+		</p>
+		<p>
+			If there is no leverage, then substitute the value 1 for leverage in the equations.
+		</p>
+		<h3>Cross-Market and Weighted Index</h3>
+		<p>
+			It is very convenient to create an index for two markets that cannot normally be
+ compared because they trade in different units. For example, if you wanted to show
+the spread between gold and IBM, you could index them both beginning at the same
+date. The new indexes would then be in the same units (percent) and would be easy to
+compare.
+		</p>
+		<p>
+			Most often, an index combines a number of related markets into a single number.
+A simple aggregate index is the ratio of unweighted sums of market prices in a specifi c
+year to the same markets in the base year. Most of the popular indexes, such as the New
+York Stock Exchange Composite Index, fall into this class. A weighted aggregate index
+biases certain markets by weighting them to increase or decrease their effect on the
+composite value. The index is then calculated as in the simple aggregate index. When
+combining markets into a single index value, the total of all the weights will equal 1 and
+all weights are expressed as a percentage.
+		</p>
+		<h3>U.S. Dollar Index</h3>
+		<p>
+			A practical example of a weighted index is the U.S. Dollar Index, traded as DX on the
+New York Board of Trade (NYBOT) and USDX on the Intercontinental Exchange (ICE).
+It is a trade-weighted geometric average of six currencies: the euro, 57.6%; the Japanese
+yen, 13.6%; the UK pound, 11.9%; the Canadian dollar, 9.1%; the Swedish krona, 4.2%;
+and the Swiss franc, 3.6%. The Dollar Index serves as a valuable economic indicator, but
+shows only 13.6% representing Asia. It is not a good substitute for a diversifi ed world
+market portfolio.
+		</p>
+		<p>
+			The Dollar Index rises when the U.S. dollar increases in value relative to the other
+currencies. In the daily calculation of the Dollar Index, each price change is represented
+as a percent. If, for example, the euro rises 50 points from 1.2500 to 1.2550, the change
+is 1.2550/1.2500 = .004; this is multiplied by its weighting factor 0.576 and contributes
+–0.002304 to the index (a rising euro is a falling dollar).
 		</p>
 
 		<h2>Next Steps</h2>

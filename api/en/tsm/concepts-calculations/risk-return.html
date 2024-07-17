@@ -10,7 +10,206 @@
 
 		<h2>Standardizing Risk and Return</h2>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam odit aspernatur enim, perferendis sequi fugiat iusto, rerum voluptatum veritatis est aliquid deserunt? Eaque dolorum explicabo debitis dicta suscipit tempora enim.
+			In order to compare one trading method with another, it is necessary to standardize both
+the tests and the measurements used for evaluation. If one system has total returns of
+50% and the other 250%, we cannot decide which is best unless we know the duration of
+the test and the volatility of the returns, or risk. If the 50% return was over 1 year and the
+250% return over 10 years, then the fi rst one is best. Similarly, if the fi rst return had an
+annualized risk of 10% and the second a risk of 50%, then both would be equivalent. The
+return relative to the risk is crucial to performance as will be discussed in Chapter 21,
+System Testing. For now it is only important that returns and risk be annualized or standardized to make comparisons valid.
+		</p>
+		<h3>Calculating Returns</h3>
+		<p>
+			The calculations for both 1-period returns and annualized returns will be an essential
+part of all performance evaluations. In its simplest form, the 1-period rate of return, R,
+or the holding period rate of return is often given as
+<img src="/api/en/tsm/concepts-calculations/39.png" alt="" width="100%">
+For the stock market, which has continuous prices, this can be written
+<img src="/api/en/tsm/concepts-calculations/40.png" alt="" width="100%">
+where p0 is the initial price and p1 is the price after one period has elapsed. The securities
+industry often prefers a different calculation
+<img src="/api/en/tsm/concepts-calculations/41.png" alt="" width="100%">
+Both methods have advantages and disadvantages. Neither one is the “correct” calculation. Note that in some software, the function log is actually the natural log, and
+log10 is the log base 10. It is best to always check the defi nitions. In order to distinguish
+the two calculations, the fi rst method will be called the standard method and the second
+the ln method.
+
+		</p>
+		<p>
+			In the following spreadsheet example, shown in Table 2.3 over 22 days, the standard
+returns are in column D and the ln returns in column E. The differences seem small,
+but the averages are 0.00350 and 0.00339. The standard returns are better by 3.3% over
+only one trading month. At this rate, the standard method would have yielded returns
+that were nearly 40% higher after one year. The net asset value (NAV), used extensively
+throughout this book, compounds the periodic returns, and most often has a starting
+value, NAV0 = 100.
+<img src="/api/en/tsm/concepts-calculations/42.png" alt="" width="100%">
+
+		</p>
+		<h3>Annualizing Returns</h3>
+		<p>
+			In most cases, it is best to standardize the returns by annualizing. This is particularly
+helpful when comparing two sets of test results, where each covers a different time
+period. When annualizing, it is important to know that
+			<ul>
+				<li>Government instruments use a 360-day rate (based on 90- day quarters).</li>
+				<li>A 365-day rate is common for most other data that can change daily</li>
+				<li>Trading returns are best with 252 days, which is the typical number of days in a
+					trading year for the United States (262 days for Europe).</li>
+			</ul>
+<img src="/api/en/tsm/concepts-calculations/43.png" alt="" width="100%">
+The following formulas use 252 days, which will be the standard throughout this
+book except for certain interest rate calculations; however, 365 or 360 may be substituted, or even 260 for trading days in other parts of the world.
+		</p>
+		<p>
+			The annualized rate of return (AROR) on a simple-interest basis for an investment
+over n days is
+<img src="/api/en/tsm/concepts-calculations/44.png" alt="" width="100%">
+
+where E0 is the starting equity or account balance, En is the equity at the end of the nth
+period, and 252/n are the years expressed as a decimal. When the 1-period returns are calculated using the standard method, then the annualized compounded rate of return is
+		</p>
+		<p>
+			Note that AROR or R (capital) refers to the annualized rate of return while r is the daily
+or 1-period return. Also, the form of the results is different for the two calculations. An increase of 25% for the simple return will show as 0.25 while the same increase using the
+compounded returns will be 1.25.
+		</p>
+		<p>
+			When the 1-period returns use the ln method, then the annualized rate of return is the
+sum of the returns divided by the number of years
+<img src="/api/en/tsm/concepts-calculations/45.png" alt="" width="100%">
+
+An example of this can be found in column F, the row labeled AROR, in the previous
+spreadsheet. Note that the annualized returns using the ln method are much lower than
+those using division and compounding. The compounded method will be used throughout this book.
+		</p>
+		<h3>Probability of Returns</h3>
+		<p>
+			The use of the standard deviation and compounded rate of return are combined to
+fi nd the probability of a return objective. In the following calculation,
+2 the arithmetic
+mean of continuous returns is ln(1 + Rg), and it is assumed that the returns are normally
+distributed. 
+<img src="/api/en/tsm/concepts-calculations/46.png" alt="" width="100%">
+
+		</p>
+		<h3>Risk and Volatility</h3>
+		<p>
+			While we would always like to think about returns, it is even more important to be able to
+assess risk. With that in mind, there are two extreme risks. The fi rst is event risk, which
+takes the form of an unpredictable price shock. The worst of these is catastrophic risk,
+which will cause fatal losses or ruin. The second risk is self-induced by overleverage, or
+gearing up your portfolio, until a sequence of bad trades causes ruin. The risk of price
+shocks and leverage will both be discussed in detail later in other chapters.
+		</p>
+		<p>
+			The standard risk measurement is useful for comparing the performance of two
+systems. It is commonly applied to the returns of a single stock or an entire portfolio 
+compared to a benchmark, such as the returns of the S&P 500 or a bond fund. The
+most common estimate of risk is the standard deviation, σ, of returns, r, shown earlier
+in this chapter. For most discussions of risk, the standard deviation will also be called
+volatility. When we refer to the target volatility of a portfolio, we mean the percentage
+of risk represented by 1 standard deviation of the returns, annualized. For example, in
+the previous spreadsheet, columns D and E show the daily returns. The standard deviations of those returns are shown in the same columns in the row “Std Dev” as 0.01512
+and 0.01495. Looking only at column D, 1 standard deviation of 0.01502 means that
+there is a 68% chance of a daily profi t or loss less than 1.502%. However, target volatility always refers to annualized risk, and to change a daily return to an annualized one
+we simply multiply by sqrt 252. Then the daily standard deviation of returns of 1.512% becomes an annualized volatility of 23.8%, also shown at the bottom of the spreadsheet
+example. Because we only care about the downside risk, there is a 16% chance that we
+could lose 23.8% in one year. The greater the standard deviation of returns, the greater
+the risk.
+		</p>
+		<h3>Beta</h3>
+		<p>
+			Beta (β) is commonly used in the securities industry to express the relationship of a
+single market to an index or portfolio. If beta is zero then there is no relationship; if it is
+positive then the single series tends to move with the index, both above and below. As
+beta gets larger the volatility of the single market tends to be increasingly greater than
+the index. Specifically,
+<ul>
+	<li>0 < β < 1, the volatility of the single market is less than the index</li>
+	<li>β = 1, the volatility of the single market is the same as the index</li>
+	<li>β > 1, the volatility of the single market is greater than the index</li>
+</ul>
+A negative beta is similar to a negative correlation, where the moves of the market
+are generally opposite to the index.
+		</p>
+		<p>
+			Beta is found by calculating the linear regression of the single market with the index.
+It is the slope of the single market divided by the slope of the index. Alpha, the added
+value, is the y-intercept of the solution. The values can be found using Excel, and are
+discussed in detail in Chapter 6. A general formula for beta is <br>
+Beta(A) = cov(returns A, returns B)/var(returns B) <br>
+where A is the single market and B is a portfolio or index.
+		</p>
+		<h3>Adjusting to the Target Volatility</h3>
+		<p>
+			If we have a target volatility of 12%, that is, we are willing to accept a 16% chance of losing
+12% in one year, but the actual returns show an annualized volatility of 23.8% based on an
+investment of $100,000, then to correct to a 12% target we simply increase the investment
+by 23.8/12.0, or a factor of 1.98 to $198,000, while holding the same position size. This is
+essentially deleveraging your positions by trading a smaller percentage of your account 
+value. Alternatively, we can reduce the position size by dividing by 1.98 and keeping the
+investment the same.
+		</p>
+		<p>
+			All results in this book will be shown at the target volatility of 12% unless otherwise
+stated. This is considered a modest risk level, which can be as high as 18% for some
+hedge funds. It will allow you to compare various systems and test results and see them
+at a level of risk that is most likely to represent targeted trading results.
+		</p>
+		<h3>Annualizing Daily and Monthly Returns</h3>
+		<p>
+			The previous examples used daily data and an annualization factor of sqrt 252. For monthly
+data, which is most common in published performance tables, we would take the monthly
+returns and multiply by sqrt12. In general, annualizing can be done by multiplying the data
+by the square root of the number of data items in a year. Then we use 252 for daily data,
+12 for monthly, 4 for quarterly, and so on.
+		</p>
+		<h3>Monthly Data Always Appears Less Volatile</h3>
+		<p>
+			Although monthly performance results are common in fi nancial disclosure documents,
+this convention works to the advantage of the person publishing the performance. It
+is unlikely that the highest or lowest daily net asset value (NAV) will occur on the last
+day of the month, so the extremes will rarely be seen, and the performance statistics
+will appear smoother than when using daily returns. Those responsible for due diligence
+before investing in a new product will often require daily return data in order to avoid
+overlooking a large drawdown that occurred mid-month.
+		</p>
+		<p>
+			Using the S&P index as an example, the annualized volatility of the daily returns
+from 1990 through 2010 was 18.6%, but based on monthly returns it was only 15.3%. The
+risk based on monthly returns is 17.7% lower, but the annualized rate of return would be
+the same because it only uses the beginning and ending values.
+		</p>
+		<h3>Downside Risk</h3>
+		<p>
+			Because the standard deviation is symmetric, a series of jumps in profi ts will be interpreted as larger risk. Some analysts believe that it is more accurate to measure the risk as
+limited to only the downside returns or drawdowns. The use of only losses is called lower
+partial moments, where lower refers to the downside risk, and partial means where only
+one side of the return distribution is used. The easiest way to see this is semivariance,
+which measures the dispersion that falls below the mean, R, or some target value,
+<img src="/api/en/tsm/concepts-calculations/48.png" alt="" width="100%">
+However, the most common calculation for system performance is to take the daily
+drawdowns, that is, the net loss on each day that the total equity is below the peak
+equity. For example, if the system returns had produced an equity of $25,000 on day
+t, followed by a daily loss of $500, and another loss of $250, then we would have two
+values as input 500/25000 and 750/25000, or 0.02 and 0.03. Only those net returns below 
+the most recent peaks are used in the semivariance calculation. Alternatively, you could
+just take the standard deviation of these daily drawdowns to fi nd the probable size of
+the drawdowns.
+		</p>
+		<p>
+			One concern about using only the drawdowns to predict other drawdowns is that
+it limits the number of cases and discards the likelihood that higher-than-normal profi ts
+can be related to higher overall risk. In situations where there are limited amounts of test
+data, using both the gains and losses will give more robust results. When there is a large
+amount of data, the use of drawdowns can be a very good measurement. 
+		</p>
+		<p>
+			A full discussion of performance measurements can be found in Chapter 21, System
+Testing, and also in Chapter 23 under the headings “Measuring Return and Risk” and
+“Ulcer Index.”
 		</p>
 
 		<h2>Next Steps</h2>

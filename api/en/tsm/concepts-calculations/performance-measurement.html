@@ -10,7 +10,66 @@
 
 		<h2>Standard Measurements of Performance</h2>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam odit aspernatur enim, perferendis sequi fugiat iusto, rerum voluptatum veritatis est aliquid deserunt? Eaque dolorum explicabo debitis dicta suscipit tempora enim.
+			As important as standardizing risk and return is the need to compare the performance
+of two funds or two trading models in order to decide which is best. That decision is
+ normally made based on a combination of return and risk. The simplest and most practical of these measurements is the information ratio (IR)
+ <img src="/api/en/tsm/concepts-calculations/53.png" alt="" width="100%">
+ where both annualized returns and annualized risk (the same as annualized volatility)
+have been given in the previous section of this chapter.
+		</p>
+		<p>
+			When you compare performance using any return/risk ratio, you are looking for the
+optimum point on the effi cient frontier. That is, any fund with a higher return but the
+same risk will be preferable, and any fund with the same return but a lower risk will be
+preferable.
+		</p>
+		<h3>Sharpe Ratio</h3>
+		<p>
+			The Sharpe ratio, presented by William F. Sharpe, is the most popular of all performance
+measures. It differs from the more generic information ratio in that it isolates excess
+ return by subtracting the risk-free rate of return from the fund performance
+ <img src="/api/en/tsm/concepts-calculations/54.png" alt="" width="100%">
+
+		</p>
+		<h3>Treynor Ratio</h3>
+		<p>
+			The Treynor ratio also isolates excess return; however, it replaces the annualized risk of
+the fund or trading program with the beta of the portfolio. Beta is the volatility (risk) of
+a stock relative a benchmark index, for example, the S&P. The portfolio beta is the sum
+of the weighted individual stock betas within the portfolio. If the fund has a beta of 1.2,
+then it has 20% more volatility than the overall market and moves generally in the same
+direction (see the previous section on beta). The Treynor ratio is
+<img src="/api/en/tsm/concepts-calculations/55.png" alt="" width="100%">
+		</p>
+		<h3>Other Performance Measurements</h3>
+		<p>
+			There are numerous variations on performance measures of varying degrees of usefulness. Most often the simplest ones are the best. The value of any measurement is to
+rank one trading system or fund above another in terms of risk and reward; that is, to
+help make the decision that one is better. The developers of each performance measure
+believe that each of others is fl awed, yet the most popular ratios will usually rank the
+candidate programs in similar order.
+		</p>
+		<p>
+			The most common performance measure after the information ratio is simply the
+maximum drawdown relative the investment size. The maximum drawdown should always be measured as a percentage from a highest NAV to the lowest subsequent NAV.
+The maximum drawdown is important because, in a long performance record, a single,
+large drawdown can be lost in the standard deviation when there are an overwhelming
+number of “normal” drawdowns. A statistician might be satisfi ed saying that there is a
+very, very small chance of that large drawdown occurring again, but an investor might
+want to know that it did happen and understand why it happened. One measure that
+accounts for this is the Calmar ratio
+<img src="/api/en/tsm/concepts-calculations/56.png" alt="" width="100%">
+		</p>
+		<p>
+			Another measure that tries to focus on the drawdowns is the Sortino ratio. It uses downside volatility as the risk, which is the lower partial moment of degree 2, but can also be
+substituted with the standard deviation of those days in which the NAV was lower than
+the previous high NAV (see the section on semivariance).
+<img src="/api/en/tsm/concepts-calculations/57.png" alt="" width="100%">
+		</p>
+
+		<p>
+			These performance measures will be used throughout the book when comparing different systems. They will be discussed further, along with other performance measures,
+in Chapter 21, System Testing.
 		</p>
 
 		<h2>Next Steps</h2>

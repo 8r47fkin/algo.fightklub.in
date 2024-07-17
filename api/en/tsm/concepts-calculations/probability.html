@@ -9,9 +9,165 @@
 	<body>
 
 		<h2>Probability</h2>
+		<code>
+			Calculation must measure the incalculable.
+			—Dixon G. Watts
+		</code>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam odit aspernatur enim, perferendis sequi fugiat iusto, rerum voluptatum veritatis est aliquid deserunt? Eaque dolorum explicabo debitis dicta suscipit tempora enim.
+			Change is a term that causes great anxiety. However, the effects and likelihood of a
+chance occurrence can only be measured—not predicted. The area of study that deals
+with uncertainty is probability. Everyone uses probability in daily thinking and actions.
+When you tell someone that you will “be there in 30 minutes,” you are assuming:
+<ul>
+	<li>Your car will start.</li>
+	<li>You will not have a breakdown</li>
+	<li>You will have no unnecessary delays.</li>
+	<li>You will drive at a predictable speed.</li>
+	<li>You will have the normal number of green lights.</li>
+</ul>
 		</p>
+		<p>
+			All these circumstances are extremely probabilistic, and yet everyone makes the
+same assumptions. Actually, the 30-minute arrival is intended only as an estimate of the
+average time it should take for the trip. If the arrival time were critical, you would extend
+your estimate to 40 or 45 minutes to account for unexpected events. In statistics, this is
+called increasing the confi dence interval. You would not raise the time to two hours because the likelihood of such a delay would be too remote. Estimates imply an allowable
+variation, all of which is considered normal.
+		</p>
+		<p>
+			Probability is the measuring of the uncertainty surrounding an average value. Probabilities are measured in percent of likelihood. For example, if M numbers from a total
+of N are expected to fall within a specifi c range, the probability P of any one number
+satisfying the criteria is
+		</p>
+<img src="/api/en/tsm/concepts-calculations/58.png" alt="" width="100%">
+		<p>
+			When making a trade, or forecasting prices, we can only talk in terms of probabilities or
+ranges. We expect prices to rise 30 to 40 points, or we have a 65% chance of a $400 profi t
+from a trade. Nothing is certain, but a high probability of success is very attractive.
+		</p>
+		<h3>Laws of Probability</h3>
+		<p>
+			Two basic principles of probability are easily explained by using examples with playing
+cards. In a deck of 52 cards, there are 4 suits of 13 cards each. The probability of drawing
+a specifi c card on any one turn is ½2. Similarly, the chances of drawing a particular suit or
+card number are ¼ and ½3, respectively. The probability of any one of these three possibilities occurring is the sum of their individual probabilities. This is known as the
+law of addition. The probability of success in choosing a numbered card, suit, or specifi c
+card (that is, either a 10, or a spade, or the queen of hearts) is
+<img src="/api/en/tsm/concepts-calculations/59.png" alt="" width="100%">
+
+		</p>
+		<p>
+			The other basic principle, the law of multiplication, states that the probability of two
+occurrences happening simultaneously or in succession is equal to the product of their
+separate probabilities. The likelihood of drawing a 3 and a club from the same deck in
+two consecutive turns (replacing the card after each draw) or of drawing the same cards
+from two decks simultaneously is
+		</p>
+<img src="/api/en/tsm/concepts-calculations/60.png" alt="" width="100%">
+<h3>Joint and Marginal Probability</h3>
+<p>
+	Price movement is not as clearly defi ned as a deck of cards. There is often a relationship between successive events. For example, over two consecutive days, prices must
+have one of the following sequences or joint events: (up, up), (down, down), (up, down),
+(down, up), with the joint probabilities of 0.40, 0.10, 0.35, and 0.15, respectively. In this
+example, there is the greatest expectation that prices will rise. The marginal probability of a price rise on the fi rst day is shown in Table 2.4, which concludes that there is
+a 75% chance of higher prices on the fi rst day and a 55% chance of higher prices on the
+second day.
+</p>
+<h3>Contingent Probability</h3>
+<p>
+	What is the probability of an outcome “conditioned” on the result of a prior event? In the
+example of joint probability, this might be the chance of a price increase on the second
+day when prices declined on the fi rst day. The notation for this situation (the probability
+of A conditioned on B) is
+<img src="/api/en/tsm/concepts-calculations/61.png" alt="" width="100%">
+The probability of either a price increase on Day 1 or a price increase on Day 2 is
+</p>
+<p>
+	 P(either) = P(up Day1) +  P(up Day 2) − P(up Day1 and up Day 2) <br>
+	 = 0.75 + 0.55 − 0.40 <br>
+	 = 0.90
+	 <img src="/api/en/tsm/concepts-calculations/62.png" alt="" width="100%">
+</p>
+<h3>Markov Chains</h3>
+<p>
+	If we believe that today’s price movement is based in some part on what happened yesterday, we have a situation called conditional probability. This can be expressed as a
+Markov process, or Markov chain. The results, or outcomes, of a Markov chain express
+the probability of a state or condition occurring. For example, the possibility of a clear,
+cloudy, or rainy day tomorrow can be related to today’s weather.
+</p>
+<p>
+	The different combinations of dependent possibilities are given by a transition matrix. In our weather prediction example, a clear day has a 70% chance of being followed
+by another clear day, a 25% chance of a cloudy day, and only a 5% chance of rain. In
+Table 2.5, each possibility today is shown on the left, and its probability of changing
+tomorrow is indicated across the top. Each row totals 100% and accounts for all weather combinations. The relationship between these events can be shown as a continuous
+ network (see Figure 2.11).
+</p>
+<p>
+	The Markov process can reduce intricate relationships to a simpler form. First,
+ consider a two-state process. Using the markets as an example, what is the probability of
+an up or down day following an up day, or following a down day? If there is a 70% chance
+of a higher day following a higher day (which we can say is an uptrend) and a 55% chance
+of a higher day following a lower day, what is the probability of any day within an uptrend
+being up?
+<img src="/api/en/tsm/concepts-calculations/63.png" alt="" width="100%">
+Start with either an up or down day, and then calculate the probability of the next day
+being up or down. This is done easily by simply counting the number of cases, given in
+Table 2.6a, then dividing to get the percentages, as shown in Table 2.6b.
+
+</p>
+<p>
+	Because the fi rst day may be designated as up or down, it is an exception to the
+general rule and therefore is given the weight of 50%. The probability of the second day
+being up or down is the sum of the joint probabilities
+<img src="/api/en/tsm/concepts-calculations/64.png" alt="" width="100%">
+The probability of the second day being up is 62.5%. Continuing in the same manner, use
+the probability of an up day as 0.625, the down as 0.375, and calculate the third day,
+<img src="/api/en/tsm/concepts-calculations/65.png" alt="" width="100%">
+<img src="/api/en/tsm/concepts-calculations/66.png" alt="" width="100%">
+giving the probability of any day being up within an uptrend as
+<img src="/api/en/tsm/concepts-calculations/67.png" alt="" width="100%">
+We can fi nd the chance of an up or down day if the 5-day trend is up simply by substituting the direction of the 5-day trend (or n-day trend) for the previous day’s direction
+in the example just given.
+</p>
+<p>
+	Predicting the weather is a more involved case of multiple situations converging and
+may be very representative of the way prices react to past prices. By approaching the
+problem in the same manner as the two-state process, a 1
+3 probability is assigned to each
+situation for the fi rst day; the second day’s probability is
+<img src="/api/en/tsm/concepts-calculations/68.png" alt="" width="100%">
+
+where each i + 1 element can be set equal to the corresponding ith value. There are then
+three equations in three unknowns, which can be solved directly or by matrix multiplication, as shown in Appendix 2, “Solution to Weather Probabilities Expressed as a Markov
+Chain.”3 Otherwise, it will be necessary to use the additional relationship
+</p>
+<p>
+	The results are <br>
+	P(clear) = 0.400 <br>
+	P(cloudy) = 0.425 <br>
+	P(rainy) = 0.175
+</p>
+<h3>Bayes’ Theorem</h3>
+<p>
+	Although historic generalization exists concerning the outcome of an event, a specific
+current market situation may alter the probabilities. Bayes’ theorem combines the original probability estimates with the added-event probability (the reliability of the new
+information) to get a posterior or revised probability:
+<img src="/api/en/tsm/concepts-calculations/69.png" alt="" width="100%">
+
+Assume that the price changes P(up) and P(down) are both original probabilities, and
+an added-event probability, such as an unemployment report, trade balance, crop report,
+inventory stocks, or Federal Reserve interest rate announcement is expected to have
+an overriding effect on tomorrow’s movement. Then the new probability P(Up | addedevent) is:
+<img src="/api/en/tsm/concepts-calculations/70.png" alt="" width="100%">
+where up and down refer to the original historic probabilities, and P(A and B) is a joint
+probability.
+</p>
+<p>
+	Bayes’ theorem finds the conditional probability even if the joint and marginal probabilities are not known. The new probability P(up | added-event) is:
+</p>
+<img src="/api/en/tsm/concepts-calculations/71.png" alt="" width="100%">
+
+
 
 		<h2>Next Steps</h2>
 		<p>
