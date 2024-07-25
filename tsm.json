@@ -336,23 +336,725 @@
 
     "ta": {
 
-		"Vannakam di Mappilai": {
+		"Science of Markets": {
 
-			"Adi Viraivil": {
-				"Vaathi Coming": "api/ta/introduction/Installation",
-				"Want to contribute?": "api/ta/contribute"
+			"Philosophy": {
+				"Philosophy": "api/en/tsm/introduction/introduction",
+				"Technical and Fundamental": "api/en/tsm/introduction/expanding",
+				"Mechanical Technical Analysis": "api/en/tsm/introduction/convergence",
+				"Judgmental Technical Analysis": "api/en/tsm/introduction/fun-vs-tech",
+				"Law of Supply and Demand": "api/en/tsm/introduction/pro-vs-ama",
+				"Law of Cause and Effect": "api/en/tsm/introduction/random-walk",
+				"Law of Effort vs Result": "api/en/tsm/introduction/style",
+				"How the Market Moves": "api/en/tsm/introduction/measuring-noise",
+				"A Typical Analysis of Market Action": "api/en/tsm/introduction/globalization",
+				"The Science of Markets": "api/en/tsm/introduction/background",
+				"Types of Charts": "api/en/tsm/introduction/system-development",
+				"Quiz": "api/en/tsm/introduction/objectives"
+			},
+
+			"Principles and Procedures": {
+                "Introduction": "api/en/tsm/concepts-calculations/concept-calculations",
+				"Defining Trends": "api/en/tsm/concepts-calculations/data-averaging",
+				"Trading Positions in an Up Trend": "api/en/tsm/concepts-calculations/on-average",
+				"Trading Positions in a Down Trend": "api/en/tsm/concepts-calculations/price-distribution",
+				"Culmination of an Up Trend": "api/en/tsm/concepts-calculations/moments-variance-skewness-kurtosis",
+				"Culmination of a Down Trend": "api/en/tsm/concepts-calculations/risk-return",
+				"Trading positions in a Trading Range": "api/en/tsm/concepts-calculations/the-index",
+				"Figure Chart Counts and Counting(advances)": "api/en/tsm/concepts-calculations/performance-measurement",
+				"Figure Chart Counts and Counting(declines)": "api/en/tsm/concepts-calculations/probability",
+				"The Nine Buying Tests": "api/en/tsm/concepts-calculations/supply-demand",
+				"The Nine Selling Tests": "api/en/tsm/concepts-calculations/data-averaging",
+				"Analyzing the General Market": "api/en/tsm/concepts-calculations/on-average",
+				"The Scientific Wave and the OP Index": "api/en/tsm/concepts-calculations/price-distribution",
+				"Divergences": "api/en/tsm/concepts-calculations/moments-variance-skewness-kurtosis",
+				"Trend Barometer": "api/en/tsm/concepts-calculations/risk-return",
+				"Market Readiness to Move": "api/en/tsm/concepts-calculations/the-index",
+				"Stock Selection": "api/en/tsm/concepts-calculations/performance-measurement",
+				"Protecting Capital": "api/en/tsm/concepts-calculations/probability",
+				"Quiz": "api/en/tsm/concepts-calculations/supply-demand"
+			},
+
+			"Performance": {
+                "Introduction": "api/en/tsm/charting/charting",
+				"Resources and Goals": "api/en/tsm/charting/consistent-patterns",
+				"Practice Trading Exercises": "api/en/tsm/charting/major-price-moves"
 			}
-		}
 
+		},
+
+		"Deep Dive": {
+
+			"Foreward": {
+                "Statistical Tables": "api/en/tsm/appendix/",
+				"Matrix Solution to Linear Equations and Markov Chains": "api/en/tsm/appendix/",
+				"Trigonometric Regression for Finding Cycles": "api/en/tsm/appendix/"
+			},
+
+			"Basic Law": {
+                "Charting Systems and Techniques": "api/en/tsm/chartingSystemsTechniques/",
+				"Dunnigan and the Thrust Method": "api/en/tsm/chartingSystemsTechniques/",
+				"Nofri's Congestion-Phase System": "api/en/tsm/chartingSystemsTechniques/",
+				"Outside Days with an Outside Close": "api/en/tsm/chartingSystemsTechniques/",
+				"Inside Days": "api/en/tsm/chartingSystemsTechniques/",
+				"Pivot Points": "api/en/tsm/chartingSystemsTechniques/",
+				"Action and Reaction": "api/en/tsm/chartingSystemsTechniques/",
+				"Channel Breakout": "api/en/tsm/chartingSystemsTechniques/",
+				"Moving Channels": "api/en/tsm/chartingSystemsTechniques/",
+				"Commodity Channel Index": "api/en/tsm/chartingSystemsTechniques/",
+				"Wyckoff's Combined Techniques": "api/en/tsm/chartingSystemsTechniques/",
+				"Complex Patterns": "api/en/tsm/chartingSystemsTechniques/",
+				"A Study of Charting Patterns": "api/en/tsm/chartingSystemsTechniques/",
+				"Bulkowski's Chart Pattern Rankings": "api/en/tsm/chartingSystemsTechniques/"
+			},
+
+			"Judging Market by its own Action": {
+				"Event-Driven Trends": "api/en/tsm/eventDrivenTrends/",
+                "Swing Trading": "api/en/tsm/eventDrivenTrends/",
+				"Constructing a Swing Chart Using a Swing Filter": "api/en/tsm/eventDrivenTrends/",
+				"Point and Figure Charting": "api/en/tsm/eventDrivenTrends/",
+				"The N-Day Breakout": "api/en/tsm/eventDrivenTrends/"
+			},
+
+			"Form of Charts": {
+				"Regression Analysis": "api/en/tsm/regressionAnalysis/",
+                "Components of a Time Series": "api/en/tsm/regressionAnalysis/",
+				"Characteristics of the Price Data": "api/en/tsm/regressionAnalysis/",
+				"Linear Regression": "api/en/tsm/regressionAnalysis/",
+				"Linear Correlation": "api/en/tsm/regressionAnalysis/",
+                "Nonlinear Approximations for Two Variables": "api/en/tsm/regressionAnalysis/",
+				"Transforming Nonlinear to Linear": "api/en/tsm/regressionAnalysis/",
+				"Evaluation of Two-Variable Techniques": "api/en/tsm/regressionAnalysis/",
+				"Multivariate Approximations": "api/en/tsm/regressionAnalysis/",
+				"ARIMA": "api/en/tsm/regressionAnalysis/",
+				"Basic Trading Signals Using a Linear Regression Model": "api/en/tsm/regressionAnalysis/",
+				"Measuring Market Strength": "api/en/tsm/regressionAnalysis/"
+			},
+
+			"Buying and Selling Waves": {
+				"Forecasting and Following": "api/en/tsm/timeBasedTrendCalculations/",
+                "Price Change over Time": "api/en/tsm/timeBasedTrendCalculations/",
+				"The Moving Average": "api/en/tsm/timeBasedTrendCalculations/",
+				"Geometric Moving Average": "api/en/tsm/timeBasedTrendCalculations/",
+				"Accumulative Average": "api/en/tsm/timeBasedTrendCalculations/",
+                "Reset Accumulative Average": "api/en/tsm/timeBasedTrendCalculations/",
+				"Drop-Off Effect": "api/en/tsm/timeBasedTrendCalculations/",
+				"Exponential Smoothing": "api/en/tsm/timeBasedTrendCalculations/",
+				"Plotting Lags and Leads": "api/en/tsm/timeBasedTrendCalculations/"
+			},
+
+			"Chart Records": {
+				"Trend Systems": "api/en/tsm/trendSystems/",
+                "Why Trend System Work": "api/en/tsm/trendSystems/",
+				"Basic Buy and Sell Signals": "api/en/tsm/trendSystems/",
+				"Band and Channels": "api/en/tsm/trendSystems/",
+				"Applications of a Single Trend": "api/en/tsm/trendSystems/",
+                "Comparison of Major Trend Systems": "api/en/tsm/trendSystems/",
+				"Techniques using two Trendlines": "api/en/tsm/trendSystems/",
+				"Multiple Trends and Common Sense": "api/en/tsm/trendSystems/",
+				"Comprehensive Studies": "api/en/tsm/trendSystems/",
+                "Selecting the Right Trend Method and Speed": "api/en/tsm/trendSystems/",
+				"Moving Average Sequences: Signal Progression": "api/en/tsm/trendSystems/",
+				"Early Exits from a Trend": "api/en/tsm/trendSystems/",
+				"Moving Average Projected Crossovers": "api/en/tsm/trendSystems/"
+			},
+
+			"Trend of the Market": {
+				"Momentum and Oscillators": "api/en/tsm/momentumOscillators/",
+                "Momentum": "api/en/tsm/momentumOscillators/",
+				"Divergence Index": "api/en/tsm/momentumOscillators/",
+				"Oscillators": "api/en/tsm/momentumOscillators/",
+				"Double-Smoothed Momentum": "api/en/tsm/momentumOscillators/",
+                "Velocity and Acceleration": "api/en/tsm/momentumOscillators/",
+				"Hybrid Momentum Techniques": "api/en/tsm/momentumOscillators/",
+				"Momentum Divergence": "api/en/tsm/momentumOscillators/",
+				"Some Final Comments on Momentum": "api/en/tsm/momentumOscillators/"
+			},
+
+			"Comparing Strength and Weakness": {
+				"Seasonality and Calendar Patterns": "api/en/tsm/seasonalityCalendarPatterns/",
+                "A Consistent Factor": "api/en/tsm/seasonalityCalendarPatterns/",
+				"The Seasonal Pattern": "api/en/tsm/seasonalityCalendarPatterns/",
+				"Popular Methods for Calculating Seasonality": "api/en/tsm/seasonalityCalendarPatterns/",
+				"Seasonal Filters": "api/en/tsm/seasonalityCalendarPatterns/",
+                "Seasonality and the Stock Market": "api/en/tsm/seasonalityCalendarPatterns/",
+				"Common Sense and Seasonality": "api/en/tsm/seasonalityCalendarPatterns/"
+			},
+
+			"Campaign": {
+				"Cycle Analysis": "api/en/tsm/cycleAnalysis/",
+                "Cycle Basics": "api/en/tsm/cycleAnalysis/",
+				"Uncovering the Cycle": "api/en/tsm/cycleAnalysis/",
+				"Maximum Entropy": "api/en/tsm/cycleAnalysis/",
+				"Cycle Channel Index": "api/en/tsm/cycleAnalysis/",
+                "Short Cycle Indicator": "api/en/tsm/cycleAnalysis/",
+				"Phasing": "api/en/tsm/cycleAnalysis/"
+			},
+
+			"Composite Man's Intention": {
+				"Volume, Open Interest and Breadth": "api/en/tsm/volumeOIBreadth/",
+                "A Special Case for Futures Volume": "api/en/tsm/volumeOIBreadth/",
+				"Variations from the Normal Patterns": "api/en/tsm/volumeOIBreadth/",
+				"Standard Interpretation": "api/en/tsm/volumeOIBreadth/",
+				"Volume Indicators": "api/en/tsm/volumeOIBreadth/",
+                "Breadth Indicators": "api/en/tsm/volumeOIBreadth/",
+				"Interpreting Volume and Breadth Systematically": "api/en/tsm/volumeOIBreadth/",
+				"An Integrated Probability Model": "api/en/tsm/volumeOIBreadth/",
+				"Intraday Volume Patterns": "api/en/tsm/volumeOIBreadth/",
+                "Filtering Low Volume": "api/en/tsm/volumeOIBreadth/",
+				"Market Facilitation Index": "api/en/tsm/volumeOIBreadth/"
+			},
+
+			"Individual Chart Studies P3": {
+				"Spreads and Arbitrage": "api/en/tsm/spreadsArbitrage/",
+                "Dynamics of Futures Intramarket Spreads": "api/en/tsm/spreadsArbitrage/",
+				"Carrying Charges": "api/en/tsm/spreadsArbitrage/",
+				"Spreads in Stocks": "api/en/tsm/spreadsArbitrage/",
+				"Spreads and Arbitrage Relationships": "api/en/tsm/spreadsArbitrage/",
+                "Risk Reduction in Spreads": "api/en/tsm/spreadsArbitrage/",
+				"Arbitrage": "api/en/tsm/spreadsArbitrage/",
+				"The Carry Trade": "api/en/tsm/spreadsArbitrage/",
+				"Changing Spread Relationships": "api/en/tsm/spreadsArbitrage/",
+                "Intermarket Spreads": "api/en/tsm/spreadsArbitrage/"
+			},
+
+			"Individual Chart Studies P4": {
+				"Behavioral Techniques": "api/en/tsm/behavioralTechniques/",
+                "Measuring the News": "api/en/tsm/behavioralTechniques/",
+				"Event Trading": "api/en/tsm/behavioralTechniques/",
+				"Commitment of Traders Report": "api/en/tsm/behavioralTechniques/",
+				"Opinion and Contrary Opinion": "api/en/tsm/behavioralTechniques/",
+                "Fibonacci and Human Behavior": "api/en/tsm/behavioralTechniques/",
+				"Elliott's Wave Principle": "api/en/tsm/behavioralTechniques/",
+				"Price Target Constructions Using the Fibonacci Ratio": "api/en/tsm/behavioralTechniques/",
+				"Fischer's Golden Section Compass System": "api/en/tsm/behavioralTechniques/",
+                "W.D Gann - Time and Space": "api/en/tsm/behavioralTechniques/",
+                "Financial Astrology": "api/en/tsm/behavioralTechniques/"
+			},
+
+			"Individual Chart Studies P5": {
+				"Pattern Recognition": "api/en/tsm/patternRecognition/",
+                "Projecting Daily High and Lows": "api/en/tsm/patternRecognition/",
+				"Time of Day": "api/en/tsm/patternRecognition/",
+				"Opening Gaps": "api/en/tsm/patternRecognition/",
+				"Weekday, Weekend, and Reversal Patterns": "api/en/tsm/patternRecognition/",
+                "Computer-Based Pattern Recognition": "api/en/tsm/patternRecognition/",
+				"Artificial Intelligence Methods": "api/en/tsm/patternRecognition/"
+			},
+
+			"Market Technique": {
+				"Day Trading": "api/en/tsm/dayTrading/",
+				"Impact of Transaction Costs": "api/en/tsm/dayTrading/",
+                "Key Elements of Day Trading": "api/en/tsm/dayTrading/",
+				"Trading Using Price Patterns": "api/en/tsm/dayTrading/",
+				"Intraday Breakout Systems": "api/en/tsm/dayTrading/",
+				"Intraday Volume Patterns": "api/en/tsm/dayTrading/",
+                "Intraday Price Shocks": "api/en/tsm/dayTrading/"
+			},
+
+			"Significance of Trend Lines": {
+				"Adaptive Techniques": "api/en/tsm/adaptiveTechniques/",
+				"Adaptive Trend Calculations": "api/en/tsm/adaptiveTechniques/",
+				"Adaptive Variations": "api/en/tsm/adaptiveTechniques/",
+                "Other Adaptive Momentum Calculations": "api/en/tsm/adaptiveTechniques/",
+				"Adaptive Intraday Breakout System": "api/en/tsm/adaptiveTechniques/",
+				"An Adaptive Process": "api/en/tsm/adaptiveTechniques/",
+				"Considering Adaptive Methods": "api/en/tsm/adaptiveTechniques/"
+			},
+
+			"Individual Chart Studies P6": {
+				"Price Distribution Systems": "api/en/tsm/priceDistributionSystems/",
+				"Measuring Distribution": "api/en/tsm/priceDistributionSystems/",
+				"Use of Price Distributions and Patterns to Anticipate Moves": "api/en/tsm/priceDistributionSystems/",
+                "Distribution of Prices": "api/en/tsm/priceDistributionSystems/",
+				"Steidlmayer's Market Profile": "api/en/tsm/priceDistributionSystems/",
+				"Using Daily Distributions to Identify Support and Resistance": "api/en/tsm/priceDistributionSystems/"
+			},
+
+			"Individual Chart Studies P7": {
+				"Multiple Time Frames": "api/en/tsm/multipleTimeFrames/",
+				"Tuning two time Frames to Work Together": "api/en/tsm/multipleTimeFrames/",
+				"Elder's Triple-Screen Trading System": "api/en/tsm/multipleTimeFrames/",
+                "Robert Krausz's Multiple Time Frames": "api/en/tsm/multipleTimeFrames/",
+				"Martin Pring's KST System": "api/en/tsm/multipleTimeFrames/"
+			},
+
+			"Selecting Best Stocks": {
+				"Advanced Techniques": "api/en/tsm/advancedTechniques/",
+				"Measuring Volatility": "api/en/tsm/advancedTechniques/",
+				"Using Volatility for Trading": "api/en/tsm/advancedTechniques/",
+                "Trade Selection Using Volatility": "api/en/tsm/advancedTechniques/",
+				"Liquidity": "api/en/tsm/advancedTechniques/",
+				"Trends and Price Noise": "api/en/tsm/advancedTechniques/",
+				"Trends and Interest Rate Carry": "api/en/tsm/advancedTechniques/",
+                "Expert Systems": "api/en/tsm/advancedTechniques/",
+				"Fuzzy Logic": "api/en/tsm/advancedTechniques/",
+				"Fractals, Chaos, and Entropy": "api/en/tsm/advancedTechniques/",
+				"Neural Networks": "api/en/tsm/advancedTechniques/",
+                "Genetic Algorithms": "api/en/tsm/advancedTechniques/",
+				"Replication of Hedge Funds": "api/en/tsm/advancedTechniques/"
+			},
+
+			"Determine Technical Position": {
+				"System Trading": "api/en/tsm/systemTrading/",
+				"Expectations": "api/en/tsm/systemTrading/",
+				"Identifying the Parameters": "api/en/tsm/systemTrading/",
+                "Selecting the Test Data": "api/en/tsm/systemTrading/",
+				"Testing Integrity": "api/en/tsm/systemTrading/",
+				"Searching for the Best Result": "api/en/tsm/systemTrading/",
+				"Visualizing and Interpreting Test Results": "api/en/tsm/systemTrading/",
+                "Large-Scale Testing": "api/en/tsm/systemTrading/",
+				"Refining the Strategy Rules": "api/en/tsm/systemTrading/",
+				"Arriving at Valid Test Results": "api/en/tsm/systemTrading/",
+				"Comparing the Results of Two Systems": "api/en/tsm/systemTrading/",
+                "Profiting from the Worst Results": "api/en/tsm/systemTrading/",
+				"Retesting for Changing Parameters": "api/en/tsm/systemTrading/",
+				"Testing across a Wide Range of Markets": "api/en/tsm/systemTrading/",
+				"Price Shocks": "api/en/tsm/systemTrading/",
+                "Anatomy of an Optimization": "api/en/tsm/systemTrading/",
+				"Summarizing Robustness": "api/en/tsm/systemTrading/"
+			},
+
+			"Buying and Selling Tests": {
+				"Practical Considerations": "api/en/tsm/practicalConsiderations/",
+				"Use and Abuse of the Computer": "api/en/tsm/practicalConsiderations/",
+				"Extreme Events": "api/en/tsm/practicalConsiderations/",
+                "Gambling Techniques - The Theory of Runs": "api/en/tsm/practicalConsiderations/",
+				"Selective Trading": "api/en/tsm/practicalConsiderations/",
+				"System Trade-Offs": "api/en/tsm/practicalConsiderations/",
+				"Trading Limits and Disconnected Markets": "api/en/tsm/practicalConsiderations/",
+                "Silver and NASDAQ - Too Good to be True": "api/en/tsm/practicalConsiderations/",
+				"Similarity of Systematic Trading Signals": "api/en/tsm/practicalConsiderations/"
+			},
+
+			
+			"Refinement in Accumulation Analysis": {
+				"Risk Control": "api/en/tsm/riskControl/",
+				"Mistaking Luck for Skill": "api/en/tsm/riskControl/",
+				"Risk Aversion": "api/en/tsm/riskControl/",
+                "Liquidity": "api/en/tsm/riskControl/",
+				"Measuring Return and Risk": "api/en/tsm/riskControl/",
+				"Leverage": "api/en/tsm/riskControl/",
+				"Leverage Based on Exposure": "api/en/tsm/riskControl/",
+                "Individual Trade Risk": "api/en/tsm/riskControl/",
+				"Kaufman on Stops and Profit-Taking": "api/en/tsm/riskControl/",
+				"Ranking Markets for Selection": "api/en/tsm/riskControl/",
+                "Probability of Success and Ruin": "api/en/riskControl/",
+				"Entering a Position": "api/en/tsm/riskControl/",
+				"Compunding a Position": "api/en/tsm/riskControl/",
+				"Equity Trends": "api/en/tsm/riskControl/",
+                "Investing and Reinvesting: Optimal f": "api/en/tsm/riskControl/",
+				"Comparing Expected and Actual Results": "api/en/tsm/riskControl/"
+			},
+
+			"Scientific Wave": {
+				"Diversification and Portfolio Allocation": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Diversification": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Changing Correlations": "api/en/tsm/diversificationPortfolioAllocation/",
+                "Types of Portfolio Models": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Classic Portfolio Allocation Calculations": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Finding Optimal Portfolio Allocation Calculations Using Excel's Solver": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Kaufman's Genetic Algorithm Solution to Portfolio Allocation (GASP)": "api/en/tsm/diversificationPortfolioAllocation/",
+                "Volatility Stabilization": "api/en/tsm/diversificationPortfolioAllocation/"
+			},
+
+			"Stop Orders": {
+				"Diversification and Portfolio Allocation": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Diversification": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Changing Correlations": "api/en/tsm/diversificationPortfolioAllocation/",
+                "Types of Portfolio Models": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Classic Portfolio Allocation Calculations": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Finding Optimal Portfolio Allocation Calculations Using Excel's Solver": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Kaufman's Genetic Algorithm Solution to Portfolio Allocation (GASP)": "api/en/tsm/diversificationPortfolioAllocation/",
+                "Volatility Stabilization": "api/en/tsm/diversificationPortfolioAllocation/"
+			},
+
+			"General Instructions": {
+				"Diversification and Portfolio Allocation": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Diversification": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Changing Correlations": "api/en/tsm/diversificationPortfolioAllocation/",
+                "Types of Portfolio Models": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Classic Portfolio Allocation Calculations": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Finding Optimal Portfolio Allocation Calculations Using Excel's Solver": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Kaufman's Genetic Algorithm Solution to Portfolio Allocation (GASP)": "api/en/tsm/diversificationPortfolioAllocation/",
+                "Volatility Stabilization": "api/en/tsm/diversificationPortfolioAllocation/"
+			},
+
+			"Market Philosophy": {
+				"Diversification and Portfolio Allocation": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Diversification": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Changing Correlations": "api/en/tsm/diversificationPortfolioAllocation/",
+                "Types of Portfolio Models": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Classic Portfolio Allocation Calculations": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Finding Optimal Portfolio Allocation Calculations Using Excel's Solver": "api/en/tsm/diversificationPortfolioAllocation/",
+				"Kaufman's Genetic Algorithm Solution to Portfolio Allocation (GASP)": "api/en/tsm/diversificationPortfolioAllocation/",
+                "Volatility Stabilization": "api/en/tsm/diversificationPortfolioAllocation/"
+			}
+
+		},
+
+		"Mnemonics": {
+
+			"Basic Concept": {
+                "Statistical Tables": "api/en/tsm/appendix/",
+				"Matrix Solution to Linear Equations and Markov Chains": "api/en/tsm/appendix/",
+				"Trigonometric Regression for Finding Cycles": "api/en/tsm/appendix/"
+			},
+
+			"Trends": {
+                "Charting Systems and Techniques": "api/en/tsm/chartingSystemsTechniques/",
+				"Dunnigan and the Thrust Method": "api/en/tsm/chartingSystemsTechniques/",
+				"Nofri's Congestion-Phase System": "api/en/tsm/chartingSystemsTechniques/",
+				"Outside Days with an Outside Close": "api/en/tsm/chartingSystemsTechniques/",
+				"Inside Days": "api/en/tsm/chartingSystemsTechniques/",
+				"Pivot Points": "api/en/tsm/chartingSystemsTechniques/",
+				"Action and Reaction": "api/en/tsm/chartingSystemsTechniques/",
+				"Channel Breakout": "api/en/tsm/chartingSystemsTechniques/",
+				"Moving Channels": "api/en/tsm/chartingSystemsTechniques/",
+				"Commodity Channel Index": "api/en/tsm/chartingSystemsTechniques/",
+				"Wyckoff's Combined Techniques": "api/en/tsm/chartingSystemsTechniques/",
+				"Complex Patterns": "api/en/tsm/chartingSystemsTechniques/",
+				"A Study of Charting Patterns": "api/en/tsm/chartingSystemsTechniques/",
+				"Bulkowski's Chart Pattern Rankings": "api/en/tsm/chartingSystemsTechniques/"
+			},
+
+			"Accumulation": {
+				"Event-Driven Trends": "api/en/tsm/eventDrivenTrends/",
+                "Swing Trading": "api/en/tsm/eventDrivenTrends/",
+				"Constructing a Swing Chart Using a Swing Filter": "api/en/tsm/eventDrivenTrends/",
+				"Point and Figure Charting": "api/en/tsm/eventDrivenTrends/",
+				"The N-Day Breakout": "api/en/tsm/eventDrivenTrends/"
+			},
+
+			"Climax and Tests": {
+				"Regression Analysis": "api/en/tsm/regressionAnalysis/",
+                "Components of a Time Series": "api/en/tsm/regressionAnalysis/",
+				"Characteristics of the Price Data": "api/en/tsm/regressionAnalysis/",
+				"Linear Regression": "api/en/tsm/regressionAnalysis/",
+				"Linear Correlation": "api/en/tsm/regressionAnalysis/",
+                "Nonlinear Approximations for Two Variables": "api/en/tsm/regressionAnalysis/",
+				"Transforming Nonlinear to Linear": "api/en/tsm/regressionAnalysis/",
+				"Evaluation of Two-Variable Techniques": "api/en/tsm/regressionAnalysis/",
+				"Multivariate Approximations": "api/en/tsm/regressionAnalysis/",
+				"ARIMA": "api/en/tsm/regressionAnalysis/",
+				"Basic Trading Signals Using a Linear Regression Model": "api/en/tsm/regressionAnalysis/",
+				"Measuring Market Strength": "api/en/tsm/regressionAnalysis/"
+			},
+
+			"Springs and Shakeouts": {
+				"Forecasting and Following": "api/en/tsm/timeBasedTrendCalculations/",
+                "Price Change over Time": "api/en/tsm/timeBasedTrendCalculations/",
+				"The Moving Average": "api/en/tsm/timeBasedTrendCalculations/",
+				"Geometric Moving Average": "api/en/tsm/timeBasedTrendCalculations/",
+				"Accumulative Average": "api/en/tsm/timeBasedTrendCalculations/",
+                "Reset Accumulative Average": "api/en/tsm/timeBasedTrendCalculations/",
+				"Drop-Off Effect": "api/en/tsm/timeBasedTrendCalculations/",
+				"Exponential Smoothing": "api/en/tsm/timeBasedTrendCalculations/",
+				"Plotting Lags and Leads": "api/en/tsm/timeBasedTrendCalculations/"
+			},
+
+			"Jump Across the Creek": {
+				"Trend Systems": "api/en/tsm/trendSystems/",
+                "Why Trend System Work": "api/en/tsm/trendSystems/",
+				"Basic Buy and Sell Signals": "api/en/tsm/trendSystems/",
+				"Band and Channels": "api/en/tsm/trendSystems/",
+				"Applications of a Single Trend": "api/en/tsm/trendSystems/",
+                "Comparison of Major Trend Systems": "api/en/tsm/trendSystems/",
+				"Techniques using two Trendlines": "api/en/tsm/trendSystems/",
+				"Multiple Trends and Common Sense": "api/en/tsm/trendSystems/",
+				"Comprehensive Studies": "api/en/tsm/trendSystems/",
+                "Selecting the Right Trend Method and Speed": "api/en/tsm/trendSystems/",
+				"Moving Average Sequences: Signal Progression": "api/en/tsm/trendSystems/",
+				"Early Exits from a Trend": "api/en/tsm/trendSystems/",
+				"Moving Average Projected Crossovers": "api/en/tsm/trendSystems/"
+			},
+
+			"Upthrust after Distribution": {
+				"Momentum and Oscillators": "api/en/tsm/momentumOscillators/",
+                "Momentum": "api/en/tsm/momentumOscillators/",
+				"Divergence Index": "api/en/tsm/momentumOscillators/",
+				"Oscillators": "api/en/tsm/momentumOscillators/",
+				"Double-Smoothed Momentum": "api/en/tsm/momentumOscillators/",
+                "Velocity and Acceleration": "api/en/tsm/momentumOscillators/",
+				"Hybrid Momentum Techniques": "api/en/tsm/momentumOscillators/",
+				"Momentum Divergence": "api/en/tsm/momentumOscillators/",
+				"Some Final Comments on Momentum": "api/en/tsm/momentumOscillators/"
+			},
+
+			"Counts and Guides": {
+				"Seasonality and Calendar Patterns": "api/en/tsm/seasonalityCalendarPatterns/",
+                "A Consistent Factor": "api/en/tsm/seasonalityCalendarPatterns/",
+				"The Seasonal Pattern": "api/en/tsm/seasonalityCalendarPatterns/",
+				"Popular Methods for Calculating Seasonality": "api/en/tsm/seasonalityCalendarPatterns/",
+				"Seasonal Filters": "api/en/tsm/seasonalityCalendarPatterns/",
+                "Seasonality and the Stock Market": "api/en/tsm/seasonalityCalendarPatterns/",
+				"Common Sense and Seasonality": "api/en/tsm/seasonalityCalendarPatterns/"
+			},
+
+			"Taking a Position": {
+				"Cycle Analysis": "api/en/tsm/cycleAnalysis/",
+                "Cycle Basics": "api/en/tsm/cycleAnalysis/",
+				"Uncovering the Cycle": "api/en/tsm/cycleAnalysis/",
+				"Maximum Entropy": "api/en/tsm/cycleAnalysis/",
+				"Cycle Channel Index": "api/en/tsm/cycleAnalysis/",
+                "Short Cycle Indicator": "api/en/tsm/cycleAnalysis/",
+				"Phasing": "api/en/tsm/cycleAnalysis/"
+			},
+
+			"Waves and OP Index": {
+				"Volume, Open Interest and Breadth": "api/en/tsm/volumeOIBreadth/",
+                "A Special Case for Futures Volume": "api/en/tsm/volumeOIBreadth/",
+				"Variations from the Normal Patterns": "api/en/tsm/volumeOIBreadth/",
+				"Standard Interpretation": "api/en/tsm/volumeOIBreadth/",
+				"Volume Indicators": "api/en/tsm/volumeOIBreadth/",
+                "Breadth Indicators": "api/en/tsm/volumeOIBreadth/",
+				"Interpreting Volume and Breadth Systematically": "api/en/tsm/volumeOIBreadth/",
+				"An Integrated Probability Model": "api/en/tsm/volumeOIBreadth/",
+				"Intraday Volume Patterns": "api/en/tsm/volumeOIBreadth/",
+                "Filtering Low Volume": "api/en/tsm/volumeOIBreadth/",
+				"Market Facilitation Index": "api/en/tsm/volumeOIBreadth/"
+			},
+
+			"Step by Step Accumulation": {
+				"Spreads and Arbitrage": "api/en/tsm/spreadsArbitrage/",
+                "Dynamics of Futures Intramarket Spreads": "api/en/tsm/spreadsArbitrage/",
+				"Carrying Charges": "api/en/tsm/spreadsArbitrage/",
+				"Spreads in Stocks": "api/en/tsm/spreadsArbitrage/",
+				"Spreads and Arbitrage Relationships": "api/en/tsm/spreadsArbitrage/",
+                "Risk Reduction in Spreads": "api/en/tsm/spreadsArbitrage/",
+				"Arbitrage": "api/en/tsm/spreadsArbitrage/",
+				"The Carry Trade": "api/en/tsm/spreadsArbitrage/",
+				"Changing Spread Relationships": "api/en/tsm/spreadsArbitrage/",
+                "Intermarket Spreads": "api/en/tsm/spreadsArbitrage/"
+			},
+
+			"Step by Step Distribution": {
+				"Behavioral Techniques": "api/en/tsm/behavioralTechniques/",
+                "Measuring the News": "api/en/tsm/behavioralTechniques/",
+				"Event Trading": "api/en/tsm/behavioralTechniques/",
+				"Commitment of Traders Report": "api/en/tsm/behavioralTechniques/",
+				"Opinion and Contrary Opinion": "api/en/tsm/behavioralTechniques/",
+                "Fibonacci and Human Behavior": "api/en/tsm/behavioralTechniques/",
+				"Elliott's Wave Principle": "api/en/tsm/behavioralTechniques/",
+				"Price Target Constructions Using the Fibonacci Ratio": "api/en/tsm/behavioralTechniques/",
+				"Fischer's Golden Section Compass System": "api/en/tsm/behavioralTechniques/",
+                "W.D Gann - Time and Space": "api/en/tsm/behavioralTechniques/",
+                "Financial Astrology": "api/en/tsm/behavioralTechniques/"
+			}
+
+		},
+
+		"Practice": {
+
+			"Introduction": {
+                "Statistical Tables": "api/en/tsm/appendix/",
+				"Matrix Solution to Linear Equations and Markov Chains": "api/en/tsm/appendix/",
+				"Trigonometric Regression for Finding Cycles": "api/en/tsm/appendix/"
+			},
+
+			"Trends": {
+                "Charting Systems and Techniques": "api/en/tsm/chartingSystemsTechniques/",
+				"Dunnigan and the Thrust Method": "api/en/tsm/chartingSystemsTechniques/",
+				"Nofri's Congestion-Phase System": "api/en/tsm/chartingSystemsTechniques/",
+				"Outside Days with an Outside Close": "api/en/tsm/chartingSystemsTechniques/",
+				"Inside Days": "api/en/tsm/chartingSystemsTechniques/",
+				"Pivot Points": "api/en/tsm/chartingSystemsTechniques/",
+				"Action and Reaction": "api/en/tsm/chartingSystemsTechniques/",
+				"Channel Breakout": "api/en/tsm/chartingSystemsTechniques/",
+				"Moving Channels": "api/en/tsm/chartingSystemsTechniques/",
+				"Commodity Channel Index": "api/en/tsm/chartingSystemsTechniques/",
+				"Wyckoff's Combined Techniques": "api/en/tsm/chartingSystemsTechniques/",
+				"Complex Patterns": "api/en/tsm/chartingSystemsTechniques/",
+				"A Study of Charting Patterns": "api/en/tsm/chartingSystemsTechniques/",
+				"Bulkowski's Chart Pattern Rankings": "api/en/tsm/chartingSystemsTechniques/"
+			},
+
+			"Primary Buying and Selling Opportunities": {
+				"Event-Driven Trends": "api/en/tsm/eventDrivenTrends/",
+                "Swing Trading": "api/en/tsm/eventDrivenTrends/",
+				"Constructing a Swing Chart Using a Swing Filter": "api/en/tsm/eventDrivenTrends/",
+				"Point and Figure Charting": "api/en/tsm/eventDrivenTrends/",
+				"The N-Day Breakout": "api/en/tsm/eventDrivenTrends/"
+			},
+
+			"Trading Ranges": {
+				"Regression Analysis": "api/en/tsm/regressionAnalysis/",
+                "Components of a Time Series": "api/en/tsm/regressionAnalysis/",
+				"Characteristics of the Price Data": "api/en/tsm/regressionAnalysis/",
+				"Linear Regression": "api/en/tsm/regressionAnalysis/",
+				"Linear Correlation": "api/en/tsm/regressionAnalysis/",
+                "Nonlinear Approximations for Two Variables": "api/en/tsm/regressionAnalysis/",
+				"Transforming Nonlinear to Linear": "api/en/tsm/regressionAnalysis/",
+				"Evaluation of Two-Variable Techniques": "api/en/tsm/regressionAnalysis/",
+				"Multivariate Approximations": "api/en/tsm/regressionAnalysis/",
+				"ARIMA": "api/en/tsm/regressionAnalysis/",
+				"Basic Trading Signals Using a Linear Regression Model": "api/en/tsm/regressionAnalysis/",
+				"Measuring Market Strength": "api/en/tsm/regressionAnalysis/"
+			},
+
+			"Stops and Objectives": {
+				"Forecasting and Following": "api/en/tsm/timeBasedTrendCalculations/",
+                "Price Change over Time": "api/en/tsm/timeBasedTrendCalculations/",
+				"The Moving Average": "api/en/tsm/timeBasedTrendCalculations/",
+				"Geometric Moving Average": "api/en/tsm/timeBasedTrendCalculations/",
+				"Accumulative Average": "api/en/tsm/timeBasedTrendCalculations/",
+                "Reset Accumulative Average": "api/en/tsm/timeBasedTrendCalculations/",
+				"Drop-Off Effect": "api/en/tsm/timeBasedTrendCalculations/",
+				"Exponential Smoothing": "api/en/tsm/timeBasedTrendCalculations/",
+				"Plotting Lags and Leads": "api/en/tsm/timeBasedTrendCalculations/"
+			}
+
+		},
+
+		"Quiz": {
+
+			"Introduction": {
+                "Statistical Tables": "api/en/tsm/appendix/",
+				"Matrix Solution to Linear Equations and Markov Chains": "api/en/tsm/appendix/",
+				"Trigonometric Regression for Finding Cycles": "api/en/tsm/appendix/"
+			}
+
+		}
 	},
 
     "hi": {
 
-		"Namaste, Chai Peelo Fraands": {
+		"Mastering Waves": {
 
-			"Rukho jara Sabhar Karo": {
-				"Jaldi aaraha hei": "api/hi/introduction/Installation",
-				"Want to contribute?": "api/hi/contribute"
+			"Introduction": {
+				"Introduction": "api/en/tsm/introduction/introduction",
+				"The Expanding Role of Technical Analysis": "api/en/tsm/introduction/expanding",
+				"Convergence of Trading Styles in Stocks and Futures": "api/en/tsm/introduction/convergence",
+				"A Line in the Sand between Fundamentals and Technical Analysis": "api/en/tsm/introduction/fun-vs-tech",
+				"Professional and Amateur": "api/en/tsm/introduction/pro-vs-ama",
+				"Random Walk": "api/en/tsm/introduction/random-walk",
+				"Deciding on a Trading Style": "api/en/tsm/introduction/style",
+				"Measuring Noise": "api/en/tsm/introduction/measuring-noise",
+				"Maturing Markets and Globalization": "api/en/tsm/introduction/globalization",
+				"Background Material": "api/en/tsm/introduction/background",
+				"System Development Guidelines": "api/en/tsm/introduction/system-development",
+				"Objectives of This Doc": "api/en/tsm/introduction/objectives",
+				"Profile of a Trading System": "api/en/tsm/introduction/trading-system-profile",
+				"A word about notation used in this doc": "api/en/tsm/introduction/notations-used",
+				"and finally...": "api/en/tsm/introduction/finally"
+			},
+
+			"Elementary Discussions": {
+                "What is Elliott Wave Theory": "api/en/tsm/concepts-calculations/concept-calculations",
+				"Why Learn Wave Theory?": "api/en/tsm/concepts-calculations/data-averaging",
+				"Why the Controversy?": "api/en/tsm/concepts-calculations/on-average",
+				"What Makes Elliott Wave Theory Unique": "api/en/tsm/concepts-calculations/price-distribution",
+				"How should you learn the Theory": "api/en/tsm/concepts-calculations/moments-variance-skewness-kurtosis",
+				"Why Another Book on Elliott Wave was Necessary": "api/en/tsm/concepts-calculations/risk-return",
+				"New Discoveries, The Neely Extensions": "api/en/tsm/concepts-calculations/the-index",
+				"How I discovered these New Concepts and Techniques": "api/en/tsm/concepts-calculations/performance-measurement",
+				"Where is the Theory Applicable?": "api/en/tsm/concepts-calculations/probability",
+				"How Should you Work with and Perceive Elliott?": "api/en/tsm/concepts-calculations/supply-demand",
+				"What Next?": "api/en/tsm/concepts-calculations/supply-demand"
+			},
+
+			"General Concepts": {
+                "What is a Wave": "api/en/tsm/charting/charting",
+				"Why do Waves Occur?": "api/en/tsm/charting/consistent-patterns",
+				"Why are Waves Importants?": "api/en/tsm/charting/major-price-moves",
+				"How do you Categorize Waves?": "api/en/tsm/charting/interpretation-charles-dow",
+				"How do you Label Waves?": "api/en/tsm/charting/chart-formations",
+				"What Data should be used to Analyze Waves?": "api/en/tsm/charting/trendlines",
+				"How do you Plot Data?": "api/en/tsm/charting/one-day-patterns",
+				"How Complicated to Waves Get?": "api/en/tsm/charting/continuation-patterns",
+				"How is this knowledge Used to Analyze?": "api/en/tsm/charting/concepts-chart-trading"
+			},
+
+			"Prelimiary Analysis": {
+                "Chart Preparation and Data Management": "api/en/tsm/chartingSystemsTechniques/",
+				"Retracement Rules": "api/en/tsm/chartingSystemsTechniques/",
+				"Pre-Constructive Rules of Logic": "api/en/tsm/chartingSystemsTechniques/",
+				"Synopsis of Chapter 3": "api/en/tsm/chartingSystemsTechniques/"
+			},
+
+			"Intermediary Observations": {
+				"Monowave Groups": "api/en/tsm/eventDrivenTrends/",
+                "Rules of Similarity and Balance": "api/en/tsm/eventDrivenTrends/",
+				"Rounds (1 through 3)": "api/en/tsm/eventDrivenTrends/",
+				"Zigzag 'detour' Test": "api/en/tsm/eventDrivenTrends/",
+				"Whats Next?": "api/en/tsm/eventDrivenTrends/"
+			},
+
+			"Central Considerations": {
+				"Constructions of Polywaves": "api/en/tsm/regressionAnalysis/",
+                "Impulsions": "api/en/tsm/regressionAnalysis/",
+				"Corrections": "api/en/tsm/regressionAnalysis/"
+			},
+
+			"Post-Constructive Rules of Logic": {
+				"Impulsions": "api/en/tsm/trendSystems/",
+                "Corrections": "api/en/tsm/trendSystems/"
+			},
+
+			"Conclusions": {
+				"Compaction Procedures": "api/en/tsm/momentumOscillators/",
+                "Complexity Rule": "api/en/tsm/momentumOscillators/",
+				"More on Degree": "api/en/tsm/momentumOscillators/",
+				"What is a Wave?": "api/en/tsm/momentumOscillators/",
+				"Flow Chart of Entire Neely Method of Elliott Wave Analysis": "api/en/tsm/momentumOscillators/"
+			},
+
+			"Construction of Complex Polywaves, Multiwaves etc.": {
+				"Construction of Complex Polywaves": "api/en/tsm/seasonalityCalendarPatterns/",
+                "Construction of Multiwaves": "api/en/tsm/seasonalityCalendarPatterns/",
+				"Construction of Complex Multiwaves": "api/en/tsm/seasonalityCalendarPatterns/",
+				"Construction of Macrowaves": "api/en/tsm/seasonalityCalendarPatterns/",
+				"More on Alternation": "api/en/tsm/seasonalityCalendarPatterns/",
+                "More on Extensions": "api/en/tsm/seasonalityCalendarPatterns/",
+				"Knowing where to Start the Count": "api/en/tsm/seasonalityCalendarPatterns/"
+			},
+
+			"Basic Neely Extensions": {
+				"Trendline Touch Points": "api/en/tsm/cycleAnalysis/",
+                "Time Rule": "api/en/tsm/cycleAnalysis/",
+				"Independent Rule": "api/en/tsm/cycleAnalysis/",
+				"Simultaneous Occurence": "api/en/tsm/cycleAnalysis/",
+				"Exception Rule": "api/en/tsm/cycleAnalysis/",
+                "Necessity of Maintaining 'Structure' Integrity": "api/en/tsm/cycleAnalysis/",
+				"Locking in Structure": "api/en/tsm/cycleAnalysis/",
+				"Flexibility of 'Progress' labels (expansion of a pattern)": "api/en/tsm/cycleAnalysis/"
+			},
+
+			"Advanced Logic Rules": {
+				"Pattern Implications": "api/en/tsm/volumeOIBreadth/",
+                "All Corrections (except Triangles)": "api/en/tsm/volumeOIBreadth/",
+				"Triangles": "api/en/tsm/volumeOIBreadth/",
+				"Impulsions": "api/en/tsm/volumeOIBreadth/"
+			},
+
+			"Advanced Progress Label Application": {
+				"Impulse Patterns - Trending": "api/en/tsm/spreadsArbitrage/",
+                "Impulse Patterns - Terminal": "api/en/tsm/spreadsArbitrage/",
+				"Corrective Patterns - Flats": "api/en/tsm/spreadsArbitrage/",
+				"Corrective Patterns - Zigzags": "api/en/tsm/spreadsArbitrage/",
+				"Corrective Patterns - Triangles": "api/en/tsm/spreadsArbitrage/"
+			},
+
+			"Advanced Neely Extensions": {
+				"Channeling": "api/en/tsm/behavioralTechniques/",
+                "Impulse Identification with Channeling": "api/en/tsm/behavioralTechniques/",
+				"Corrections Identification with Channeling": "api/en/tsm/behavioralTechniques/",
+				"Identifying the Completion of Waves": "api/en/tsm/behavioralTechniques/",
+				"Advanced Fibonacci Relationships": "api/en/tsm/behavioralTechniques/",
+                "Fibonacci - Internal": "api/en/tsm/behavioralTechniques/",
+				"Fibonacci - External": "api/en/tsm/behavioralTechniques/",
+				"Missing Waves": "api/en/tsm/behavioralTechniques/",
+				"Emulation": "api/en/tsm/behavioralTechniques/",
+                "Expansion of Possibilities": "api/en/tsm/behavioralTechniques/",
+                "Localized Progress Label Changes": "api/en/tsm/behavioralTechniques/"
+			}
+
+		},
+
+		"Appendix": {
+
+			"Appendix": {
+                "Forecast to the year 2060": "api/en/tsm/appendix/"
 			}
 
 		}

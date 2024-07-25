@@ -10,7 +10,202 @@
 
 		<h2>Implied Strategies in Candlestick Charts</h2>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam odit aspernatur enim, perferendis sequi fugiat iusto, rerum voluptatum veritatis est aliquid deserunt? Eaque dolorum explicabo debitis dicta suscipit tempora enim.
+			For a technique that is reported to have been used as early as the mid-1600s, Japanese
+			candle charts were slow to find their way into the western method of analysis. Candle
+			charts can be related to bar charts but offer additional visual interpretation. The candles
+			are created simply by shading the piece of the bar between the opening and closing prices: 
+			white if the close is higher than the open and black if the close is lower than the open.
+			The shaded area is called the body and the extended lines above and below the body are
+			the shadows. With this simple change, we get an entirely new way of looking at and 
+			interpreting charts. The patterns become much clearer than the Western style of line chart.
+		</p>
+		<p>
+			Although many candlestick patterns have equivalent bar chart formations, there is
+			an implied strategy in many of them. The following summary uses the traditional candlestick 
+			names representing the significance of the formation (see Figure 3.38):
+			<img src="/api/en/tsm/charting/candlestick-formation.png" alt="candlestick-formation" width="100%">
+		</p>
+		<ul>
+			<li>
+				Doji, in which the opening and closing prices are the same. This represents indecision, 
+				a temporary balancing point. It is neither bullish nor bearish. A double
+				doji, where two dojis occur successively, implies that a significant breakout will
+				follow.
+			</li>
+			<li>
+				Engulfing patterns seem at first to be the same as outside days in bar charting, but
+				the pattern only refers to the part of the bar between the opening and closing prices.
+				Engulfing patterns are considered exceptionally strong signals of price change. A
+				bullish engulfing pattern has a black candle followed by a white, indicating a wide
+				range with a higher close. The bearish engulfing pattern is white followed by black,
+				showing a lower close on the engulfi ng day.
+			</li>
+			<li>
+				Morning star and evening star are 3-day patterns that show a similarity to an island
+				reversal, but are more specific. In the morning star, a bullish reversal pattern, the
+				first day has a lower close than the open, the second day (called the star, similar to
+				the island bottom) has a higher close, and the final reversal day has an even higher
+				close. The bearish reversal is just the opposite, with two higher closes followed by
+				a reversal day with a lower close. If the star is also a doji, then the pattern has more
+				significance.
+			</li>
+			<li>
+				Piercing line and dark cloud cover are bullish and bearish reversals. The piercing
+				line, a bullish reversal, begins with a black candle (a lower close) and is followed by a
+				white candle in which the open is below the previous day’s low and the close is above
+				the midpoint of the previous day’s body (the open-close range). The dark cloud cover
+				is a bearish formation, the opposite of the piercing line.
+			</li>
+			<li>
+				Hammer, a bullish reversal signal, showing the bottom of a swing, where the body is
+				at the top of the candle, indicating an upwards change of direction, and the shadow
+				is below the body. The body may be black or white.
+			</li>
+			<li>
+				Hanging man, a bearish reversal pattern where the body of the candle represents
+				the high of a swing, and the shadow lies below in the direction of the reversal. The
+				body may be black or white.
+			</li>
+			<li>
+				Shooting star, a bearish signal, also occurs at the top of a swing and has its body
+				at the bottom of the candle with the shadow above. The body may be black or
+				white.
+			</li>
+		</ul>
+		<p>
+			Although these patterns are similar to Western bar chart formations, none of them
+			are exactly the same. The hammer, hanging man, and shooting star are reversal patterns
+			but can only be compared to the simple pivot point where the middle day is higher or
+			lower than the bars on either side. None of these candle formations is exactly the same
+			as a key reversal day or island reversal. The engulfi ng pattern is stronger than the typical
+			outside day because the spanning of the prior day’s range must be done only by the current day’s open-close range.
+		</p>
+		<p>
+			The analysis of candle charts is a skill involving the understanding of many complex
+			and interrelated patterns. For full coverage, Steve Nison’s, Japanese Candlestick Charting Techniques, 
+			second edition, is recommended, as well as a selection of newer books,
+			which can be found on Amazon.
+		</p>
+		<h3>
+			Quantifying Candle Formations
+		</h3>
+		<p>
+			The preciseness of the candle formations allow some patterns to be tested. The popular
+			engulfing patterns can be defined exactly for a computer program as
+			<code>
+				Bullish engulfi ng pattern = Previous open > previous close and today’s
+					open < previous close and today’s close > previous open
+
+				Bearish engulfi ng pattern = Previous close > previous open and today’s
+					open > previous close and today’s close < previous open
+			</code>
+			Another technique uses the shadows as confirmation of direction. We can interpret
+			an increase in the size of the upper shadows as strengthening resistance (prices are closing lower each day); 
+			an increase in the size of the lower shadows represents more support. One way to look at this is by defining
+			<code>
+				Upper shadow ( white) = high − close 			Lower shadow (white) = open − low
+				Upper shadow (black) = high − open 				Lower shadow (black) = close − low
+			</code>
+			The sequences of upper and lower shadows can be smoothed separately using a
+			moving average to find out whether they are rising or falling.
+		</p>
+		<p>
+			A method for determining whether black or white candles dominate recent price
+			movement is to use only the body of the candle, B = close − open, and apply a momentum
+			calculation:
+			<img src="/api/en/tsm/charting/body-momentum.png" alt="body momentum formula">
+			When the body momentum is greater than 70, the whites dominate; when the value is
+			below 20 the blacks dominate. These thresholds indicate a built-in upwards bias.
+		</p>
+		<h3>
+			Morning Star and Evening Star
+		</h3>
+		<p>
+			Two formations that are easily programmed are the morning star (a bullish signal) and
+			evening star (a bearish signal). Using the morning star as an example, the rules call for a
+			long downward (black) candle followed by a lower (the open of the next bar less than the
+			close of the previous long bar), less volatile white candle, and fi nally an upward thrust
+			shown as a gap up body with the close higher than the open (another white candle).
+		</p>
+		<p>
+			When programmed (see TSM Morning Star and TSM Evening Star in the
+			Companion Website), there are very few signals when we put restriction on the size
+			of the bodies of the three days. Instead, we only required that the body of the first
+			day be greater than the 20-day average, the second day less, and the third day greater.
+			While there are still only a modest number of trades, the S&P performs well on the day
+			following both patterns.
+		</p>
+		<h3>
+			Qstick
+		</h3>
+		<p>
+			As a way of quantifying the Candle formations, Tuschar Chande19 created Qstick, a moving average 
+			of the body of the candle. It is intended to be an aid interpreting the charts
+			but has simple trading rules as well.
+		<code>
+			If Bodyt = Closet – Opent
+		</code>
+		and
+		<code>
+			Qt = average(period1,body), where period1 is suggested as 8 days
+			AvgQt = average(period2,Q), where period2 is also 8 days
+		</code>
+		Then the trading rules are
+		<code>
+			Buy when Qt moves above AvgQt
+			Sell when Qt moves below AvgQt
+		</code>
+		</p>
+		<h3>
+			Pivot Points and Candle Charts
+		</h3>
+		<p>
+			John L. Person suggests that the strategies inherent in candle formations can be combined with support 
+			and resistance levels derived from pivot points. He uses the following calculations:
+			<ol>
+				<li>
+					Pivot point, P = (high + low + close)/3
+				</li>
+				<li>
+					First resistance level, R1 = (P × 2) − low
+				</li>
+				<li>
+					Second resistance level, R2 = P + high − low
+				</li>
+				<li>
+					First support level, S1 = (P + 2) − high
+				</li>
+				<li>
+					Second support level, S2 = P − high + low
+				</li>
+			</ol>
+			Once a key formation for a top or bottom is recognized using candle charts, support
+			and resistance levels calculated based on pivot points can be a strong indication of the
+			extent of the following price move. Person used Dow futures to support his study.
+		</p>
+		<h3>
+			The Best of the Candles
+		</h3>
+		<p>
+			Bulkowski has summarized his own research in the success of various candles as
+			<ul>
+				<li>
+					The best-performing candles had closing prices within 1/3 of the bar low, followed by
+					the middle and high, respectively.
+				</li>
+				<li>
+					Candle patterns in a bear market outperform other markets, regardless of the breakout direction.
+				</li>
+				<li>
+					Most candles perform best on days with higher volume.
+				</li>
+				<li>
+					Candles with unusually long wicks outperform.
+				</li>
+				<li>
+					Unusually tall candles outperform.
+				</li>
+			</ul>
 		</p>
 
 		<h2>Next Steps</h2>
