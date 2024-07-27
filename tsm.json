@@ -336,6 +336,40 @@
 
     "ta": {
 
+		"Stock Market Science": {
+
+			"Course 1": {
+                "How to Proceed": "api/en/rdw/how-to-proceed",
+                "Foreword": "api/en/rdw/foreword",
+				"Basic Law": "api/en/rdw/basic-law",
+				"Judging the Market by its Own Action": "api/en/rdw/judging-the-market-by-its-own-action",
+				"Forms of Charts": "api/en/rdw/forms-of-charts",
+                "Buying and Selling Waves": "api/en/rdw/buying-and-selling-waves",
+				"Chart Records": "api/en/rdw/chart-records",
+				"Determining the Trend of the Market - Composite Averages": "api/en/rdw/determining-the-trend-of-market",
+				"Comparing Strength and Weakness - Group Averages": "api/en/rdw/comparing-strength-and-weakness",
+                "How a Campaign is Conducted - Individual Chart Studies - Part I": "api/en/rdw/how-a-campaign-is-conducted",
+				"How the Operator's Intentions may be Detected - Chart Studies II": "api/en/rdw/operators-intention-detected",
+				"Figure Charts - Individual Chart Studies - Part III": "api/en/rdw/chart-studies-p3",
+				"Figure Charts Studies - Individual Stocks - Part IV": "api/en/rdw/chart-studies-p4",
+                "Figure Chart - N.Y. Times Average - Chart Studies Part V": "api/en/rdw/chart-studies-p5",
+				"Market Technique - Volume Studies": "api/en/rdw/market-technique-volume-studies",
+				"Significance of Trend Lines": "api/en/rdw/significance-of-trend-lines",
+				"Vertical Line Charts - Chart Studies Part VI": "api/en/rdw/chart-studies-p6",
+                "Vertical Line Charts - Chart Studies Part VII": "api/en/rdw/chart-studies-p7",
+				"Selecting the Best Stocks - Position Sheet - Barometer": "api/en/rdw/position-sheet",
+				"How to Determine the Position of an Individual Stock": "api/en/rdw/determine-the-position-of-an-individual-stock",
+				"Buying and Selling Tests": "api/en/rdw/buying-and-selling-tests",
+                "Refinements": "api/en/rdw/refinements",
+				"The Wave Chart": "api/en/rdw/the-wave-chart",
+				"Stop Orders": "api/en/rdw/stop-order",
+				"General Instructions - Cautionary Suggestions": "api/en/rdw/general-instructions",
+                "Market Philosophy - Cautionary Suggestions (Cont.)": "api/en/rdw/market-philosophy",
+				"Addenda": "api/en/rdw/addenda"
+			}
+
+		},
+
 		"Science of Markets": {
 
 			"Philosophy": {
